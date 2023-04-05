@@ -1,8 +1,7 @@
-﻿.navBar{
-
+﻿.navBar {
+    background-color: #412f17;
+    height: 60px;
+    width: 100%;
 }
 
-.centered{
-    position: fixed;
-    left:50%;
-}
+
