@@ -1,0 +1,25 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="REMaster.master.cs" Inherits="Term_Project.REMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+    <link href="Stylesheets/Navigation.css" rel="stylesheet" type="text/css" />
+    <link href="Stylesheets/main.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class:"navBar">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <asp:Label ID="lblHomeBuy" class="centered" runat="server" Font-Bold="True" Font-Names="Rockwell Condensed" Font-Size="XX-Large" style="text-align: center; color: #ffffff; top: 15px; width: 347px;" Text="Home Buy" CssClass="centered" ForeColor="White"></asp:Label>
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
