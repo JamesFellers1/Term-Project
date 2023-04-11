@@ -7,19 +7,9 @@ using System.Web.UI.WebControls;
 
 namespace Term_Project
 {
-    public partial class LoginPage : System.Web.UI.Page
+    public partial class HomePage : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void btnSubmit_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void btnLogin_Click(object sender, EventArgs e)
         {
 
         }
