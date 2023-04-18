@@ -11,6 +11,10 @@
     <link href="Stylesheets/navigation.css" rel="stylesheet" type="text/css" />
     <link href="Stylesheets/main.css" rel="stylesheet" type="text/css" />
 
+    <link href="Stylesheets/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="Stylesheets/webflow.css" rel="stylesheet" type="text/css" />
+    <link href="Stylesheets/cis3342-term-project.webflow.css" rel="stylesheet" type="text/css" />
+
 
 </head>
 <body>
