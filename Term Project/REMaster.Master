@@ -14,18 +14,26 @@
 
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div class:"navbar">
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                <div class="navBar">
-                <asp:Label ID="lblHomeBuy" class="centered" runat="server" Font-Bold="True" Font-Names="Rockwell Condensed" Font-Size="XX-Large" style="text-align: center; color: #ffffff; top: 15px; width: 347px;" Text="Home Buy" CssClass="centered" ForeColor="White"></asp:Label>
+    <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
+        <div class="navbar-container container w-container">
+            <a href="#" class="brand w-nav-brand">
+                <h1 class="logo-name">Home Buy</h1>
+            </a>
+            <nav role="navigation" class="w-nav-menu">
+                <a href="#" class="nav-link w-nav-link">Home</a>
+                <a href="#" class="nav-link w-nav-link">About</a>
+                <a href="#" class="nav-link w-nav-link">Contact</a>
+            </nav>
+            <div class="w-nav-button">
+                <div class="icon w-icon-nav-menu"></div>
             </div>
-                <div class="background">
-
-                </div>
+        </div>
+    </div>
+    <form id="form1" runat="server">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+=               <asp:Label ID="lblHomeBuy" class="centered" runat="server" Font-Bold="True" Font-Names="Rockwell Condensed" Font-Size="XX-Large" style="text-align: center; color: #ffffff; top: 15px; width: 347px;" Text="Home Buy" CssClass="centered" ForeColor="White"></asp:Label>
 
             </asp:ContentPlaceHolder>
-        </div>
     </form>
 </body>
 </html>
