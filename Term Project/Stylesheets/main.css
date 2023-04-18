@@ -1,13 +1,14 @@
 ﻿body {
     background-image: url(https://img.myloview.com/stickers/dark-background-pattern-simple-seamless-pattern-with-stars-on-a-black-background-vector-background-400-214366398.jpg);
     background-size: 150px;
+    overflow: scroll;
 }
-.background{
-    position:fixed;
-    left:10%;
-    background-color:#212121;
-    height:100%;
-    width:80%;
+.background {
+    position: fixed;
+    left: 10%;
+    background-color: #212121;
+    height: 100%;
+    width: 80%;
 
 }
 .centered {

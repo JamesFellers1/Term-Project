@@ -11,7 +11,7 @@ namespace Term_Project
 {
 
 
-    public partial class LoginPage
+    public partial class CreateAccountPage
     {
 
         /// <summary>
