@@ -2,26 +2,32 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" runat="server" contentplaceholderid="ContentPlaceHolder1">
-    <div class="login-section wf-section">
-    <div class="login-container container w-container">
-      <h1 class="create-account-heading">Log In</h1>
-      <div class="log-in-wrapper">
-        <div class="w-form">
-          <form id="email-form" name="email-form" data-name="Email Form" method="get"><label for="Username-3">Username</label><input type="text" class="w-input" maxlength="256" name="Username-3" data-name="Username 3" placeholder="" id="Username-3" required=""><label for="Password-3">Password</label><input type="password" class="w-input" maxlength="256" name="Password-3" data-name="Password 3" placeholder="" id="Password-3" required="">
-            <div class="login-button-wrapper"><input type="submit" value="Submit" data-wait="Please wait..." class="log-in-button w-button">
-              <a href="#" class="login-forgot-password">Forgot Username or Password?</a>
+                <div class="navBar">
+                <asp:Label ID="lblHomeBuy" class="centered" runat="server" Font-Bold="True" Font-Names="Rockwell Condensed" Font-Size="XX-Large" style="text-align: center; color: #ffffff; top: 15px; width: 347px;" Text="Home Buy" CssClass="centered" ForeColor="White"></asp:Label>
             </div>
-          </form>
-          <div class="w-form-done">
-            <div>Thank you! Your submission has been received!</div>
-          </div>
-          <div class="w-form-fail">
-            <div>Oops! Something went wrong while submitting the form.</div>
-          </div>
+                <div class="background">
+        <div>
+            <asp:Label ID="lblCreateAccount" runat="server" BorderStyle="Double" BorderWidth="8px" Font-Bold="True" style="z-index: 1; left: 97px; top: 184px; position: absolute; width: 469px; height: 417px; text-align: center; font-family: 'Berlin Sans FB Demi'; font-size: large; right: 1398px;" Text="Create an Account" ViewStateMode="Enabled"></asp:Label>
+            <asp:Button ID="btnSubmit" runat="server" style="z-index: 1; left: 403px; top: 555px; position: absolute; height: 35px;" Text="Submit" OnClick="btnSubmit_Click" />
+            <asp:Label ID="lblLoginUsername" runat="server" style="z-index: 1; left: 1181px; top: 342px; position: absolute" Text="Username: "></asp:Label>
+            <asp:Label ID="lblLogin" runat="server" BorderStyle="Double" BorderWidth="8px" Font-Bold="True" style="z-index: 1; left: 977px; top: 216px; position: absolute; width: 469px; height: 308px; text-align: center; font-family: 'Berlin Sans FB Demi'; font-size: large" Text="Log In" ViewStateMode="Enabled"></asp:Label>
+            <asp:Label ID="lblUsername" runat="server" style="z-index: 1; left: 326px; top: 306px; position: absolute" Text="Username: "></asp:Label>
+            <asp:TextBox ID="txtUsername" runat="server" style="z-index: 1; left: 363px; top: 244px; position: absolute"></asp:TextBox>
+            <asp:Label ID="lblPassword" runat="server" style="z-index: 1; left: 311px; top: 348px; position: absolute" Text="Password:"></asp:Label>
+            <asp:TextBox ID="txtPassword" runat="server" style="z-index: 1; left: 361px; top: 289px; position: absolute"></asp:TextBox>
+            <asp:TextBox ID="txtName" runat="server" style="z-index: 1; left: 361px; top: 332px; position: absolute"></asp:TextBox>
+            <asp:Label ID="lblName" runat="server" style="z-index: 1; left: 318px; top: 398px; position: absolute" Text="Full Name:"></asp:Label>
+            <asp:Label ID="lblEmail" runat="server" style="z-index: 1; left: 322px; top: 451px; position: absolute" Text="Email: "></asp:Label>
+            <asp:TextBox ID="txtEmail" runat="server" style="z-index: 1; left: 361px; top: 376px; position: absolute"></asp:TextBox>
+            <asp:TextBox ID="txtLoginUsername" runat="server" style="z-index: 1; left: 1241px; top: 284px; position: absolute"></asp:TextBox>
+            <asp:TextBox ID="txtLoginPw" runat="server" style="z-index: 1; left: 1242px; top: 355px; position: absolute"></asp:TextBox>
+            <asp:Button ID="btnLogin" runat="server" style="z-index: 1; left: 1172px; top: 472px; position: absolute" Text="Log In" OnClick="btnLogin_Click" />
+            <asp:Label ID="lblError" runat="server" ForeColor="#FF3300" style="z-index: 1; left: 923px; top: 229px; position: absolute"></asp:Label>
+            <asp:Label ID="lblTitle" runat="server" Font-Bold="True" Font-Names="Californian FB" Font-Size="100px" ForeColor="#A2875B" style="text-align: center; z-index: 1; left: 268px; top: 42px; position: absolute; height: 67px; width: 1163px" Text="Create An Account"></asp:Label>
+            <asp:Label ID="lblLoginPw" runat="server" style="z-index: 1; left: 1179px; top: 417px; position: absolute" Text="Password:"></asp:Label>
         </div>
-      </div>
-    </div>
-  </div>
-</asp:Content>
+                </div>
+
+            </asp:Content>
 
 
