@@ -71,6 +71,7 @@
     <Content Include="HomePage.aspx" />
     <Content Include="Image\background.jpg" />
     <Content Include="LoginPage.aspx" />
+    <Content Include="SearchHomesPage.aspx" />
     <Content Include="Stylesheets\cis3342-term-project.webflow.css" />
     <Content Include="Stylesheets\main.css" />
     <Content Include="Stylesheets\navigation.css" />
@@ -107,6 +108,13 @@
     </Compile>
     <Compile Include="REMaster.Master.designer.cs">
       <DependentUpon>REMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SearchHomesPage.aspx.cs">
+      <DependentUpon>SearchHomesPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchHomesPage.aspx.designer.cs">
+      <DependentUpon>SearchHomesPage.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
