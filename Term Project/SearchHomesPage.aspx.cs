@@ -7,13 +7,14 @@ using System.Web.UI.WebControls;
 
 namespace Term_Project
 {
-    public partial class CreateAccountPage : System.Web.UI.Page
+    public partial class SearchHomesPage : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
-        protected void btnSubmit_Click(object sender, EventArgs e)
+
+        protected void gvHomeSearch_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
