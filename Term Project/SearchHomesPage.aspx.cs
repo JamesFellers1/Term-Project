@@ -13,5 +13,10 @@ namespace Term_Project
         {
 
         }
+
+        protected void gvHomeSearch_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
