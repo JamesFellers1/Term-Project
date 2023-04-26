@@ -78,6 +78,7 @@
     <Content Include="Stylesheets\navigation.css" />
     <Content Include="Stylesheets\normalize.css" />
     <Content Include="Stylesheets\webflow.css" />
+    <Content Include="UserControl.ascx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -123,6 +124,13 @@
     </Compile>
     <Compile Include="SearchHomesPage.aspx.designer.cs">
       <DependentUpon>SearchHomesPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl.ascx.cs">
+      <DependentUpon>UserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl.ascx.designer.cs">
+      <DependentUpon>UserControl.ascx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -9,12 +9,32 @@
                     <div class="register-section wf-section">
                         <div class="register-container container w-container">
                             <h1 class="create-account-heading">Search Homes</h1>
-                            <asp:Label ID="lblError" runat="server" Text="" ></asp:Label>
+                            <asp:Label ID="lblError" runat="server" Text="" ForeColor="Red" ></asp:Label>
+                            <div>Search Criteria:
+                                <div><asp:Label ID="lblLocation" runat="server" Text="Enter a State"></asp:Label><asp:TextBox ID="txtLocation" runat="server"></asp:TextBox></div>
+                                <div>
+                                    <asp:Label ID="lblPrice" runat="server" Text="Enter your budget/price to stay under: "></asp:Label><asp:TextBox ID="txtPrice" runat="server"></asp:TextBox></div>
+                                <div>
+                                    <asp:Label ID="lblPropertyType" runat="server" Text="Property Type: "></asp:Label><asp:DropDownList ID="ddlPropertyType" runat="server"></asp:DropDownList></div>
+                                <div>
+                                    <asp:Label ID="lblBathrooms" runat="server" Text="Enter desired amount of bathrooms: "></asp:Label><asp:TextBox ID="txtBathrooms" runat="server"></asp:TextBox></div>
+                                <div>
+                                    <asp:Label ID="lblBedrooms" runat="server" Text="Enter desired amount of bedrooms: "></asp:Label><asp:TextBox ID="txtBedrooms" runat="server"></asp:TextBox></div>
+                                <div>
+                                    <asp:Label ID="lblAmenities" runat="server" Text="Amenities:"></asp:Label><asp:CheckBoxList ID="chkListAmenities" runat="server" RepeatDirection="Horizontal" Width="40%">
+                                        <asp:ListItem>Fireplace</asp:ListItem>
+                                        <asp:ListItem>Basement</asp:ListItem>
+                                        <asp:ListItem>Pool</asp:ListItem>
+                                        <asp:ListItem>Hot Tub</asp:ListItem>
+                                        <asp:ListItem>Garden</asp:ListItem>
+                                        <asp:ListItem>Bar</asp:ListItem>
+                                    </asp:CheckBoxList></div>
+                            </div>
                             <div class ="register-container container w-container" style="text-align:center">
-                                <asp:Button class="login-button-wrapper" ID="Button1" runat="server" Text="Search by Location & Price"/>
-                                <asp:Button class="login-button-wrapper" ID="Button2" runat="server" Text="Search by Location, Property Type, & Price" />
-                                <asp:Button class="login-button-wrapper" ID="Button3" runat="server" Text="Search by Location, Price, Size, & Rooms" />
-                                <asp:Button class="login-button-wrapper" ID="Button4" runat="server" Text="Search by Location, Price, Size, Rooms, & Amenities" />
+                                <asp:Button class="login-button-wrapper" ID="Button1" runat="server" Text="Search by State & Price"/>
+                                <asp:Button class="login-button-wrapper" ID="Button2" runat="server" Text="Search by State, Property Type, & Price" />
+                                <asp:Button class="login-button-wrapper" ID="Button3" runat="server" Text="Search by State, Price, Size, & Rooms" />
+                                <asp:Button class="login-button-wrapper" ID="Button4" runat="server" Text="Search by State, Price, Size, Rooms, & Amenities" />
                             </div>
                             <asp:Repeater ID="rpSelectedHouse" runat="server" ></asp:Repeater>
                             <asp:GridView ID="gvHomeSearch" runat="server" AlternatingRowStyle-BackColor="Black" style="width:100%"></asp:GridView>
