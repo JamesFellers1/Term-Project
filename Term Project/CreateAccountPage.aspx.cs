@@ -14,11 +14,12 @@ namespace Term_Project
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack){
             
+            }
         }
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
-            
             SqlCommand myCommand = new SqlCommand();
             myCommand.CommandType = CommandType.StoredProcedure;
             myCommand.CommandText = "TP_CreateAccount"; //name of stored procedure
@@ -31,8 +32,8 @@ namespace Term_Project
             myCommand.Parameters.AddWithValue("@phone", txtPhone.Text);
             myCommand.Parameters.AddWithValue("@type", radType.SelectedValue);
             myCommand.Parameters.AddWithValue("@sq1", ddlSQ1.SelectedValue);
-            myCommand.Parameters.AddWithValue("@sq1", ddlSQ2.SelectedValue);
-            myCommand.Parameters.AddWithValue("@sq1", ddlSQ3.SelectedValue);
+            myCommand.Parameters.AddWithValue("@sq2", ddlSQ2.SelectedValue);
+            myCommand.Parameters.AddWithValue("@sq3", ddlSQ3.SelectedValue);
             myCommand.Parameters.AddWithValue("@sq1Ans", txtSQ1.Text);
             myCommand.Parameters.AddWithValue("@sq2Ans", txtSQ2.Text);
             myCommand.Parameters.AddWithValue("@sq3Ans", txtSQ3.Text);

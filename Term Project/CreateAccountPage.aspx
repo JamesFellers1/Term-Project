@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/REMaster.Master" AutoEventWireup="true" CodeBehind="CreateAccountPage.aspx.cs" Inherits="Term_Project.CreateAccountPage" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/REMaster.Master" AutoEventWireup="true" CodeBehind="CreateAccountPage.aspx.cs" Inherits="Term_Project.CreateAccountPage" EnableEventValidation="False" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" runat="server" contentplaceholderid="ContentPlaceHolder1">
@@ -59,8 +59,7 @@
               </asp:DropDownList>
               <asp:TextBox runat="server" type="text" class="w-input" maxlength="256" name="SQ3" data-name="SQ3" placeholder="" id="txtSQ3" required=""></asp:TextBox>
 
-
-            <div class="login-button-wrapper"><input type="submit" value="Submit" data-wait="Please wait..." class="log-in-button w-button" OnClick="btnSubmit_Click"></div>
+              <asp:Button ID="btnSubmit" runat="server" Text="Submit"  CssClass="log-in-button w-button" OnClick="btnSubmit_Click"/>
           </form>
         </div>
       </div>
