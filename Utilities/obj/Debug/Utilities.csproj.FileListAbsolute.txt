@@ -1,0 +1,6 @@
+C:\Users\james\OneDrive\Desktop\CIS3342\Project3\Utilities\bin\Debug\Utilities.dll
+C:\Users\james\OneDrive\Desktop\CIS3342\Project3\Utilities\bin\Debug\Utilities.pdb
+C:\Users\james\OneDrive\Desktop\CIS3342\Project3\Utilities\obj\Debug\Utilities.csproj.AssemblyReference.cache
+C:\Users\james\OneDrive\Desktop\CIS3342\Project3\Utilities\obj\Debug\Utilities.csproj.CoreCompileInputs.cache
+C:\Users\james\OneDrive\Desktop\CIS3342\Project3\Utilities\obj\Debug\Utilities.dll
+C:\Users\james\OneDrive\Desktop\CIS3342\Project3\Utilities\obj\Debug\Utilities.pdb
