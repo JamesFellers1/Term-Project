@@ -97,6 +97,8 @@
     <Compile Include="CreateAccountPage.aspx.designer.cs">
       <DependentUpon>CreateAccountPage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Email.cs" />
+    <Compile Include="Encryptor.cs" />
     <Compile Include="HomePage.aspx.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

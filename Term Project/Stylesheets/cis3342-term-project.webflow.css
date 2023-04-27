@@ -108,6 +108,10 @@ body {
     background-color: rgba(56, 152, 236, 0);
     border: 2px solid #fff;
     border-radius: 5px;
+    z-index: 1;
+    left: 746px;
+    top: 144px;
+    position: absolute;
 }
 
     .log-in-button:hover {

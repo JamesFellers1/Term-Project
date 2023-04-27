@@ -20,6 +20,8 @@ namespace Term_Project
         }
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
+
+            
             SqlCommand myCommand = new SqlCommand();
             myCommand.CommandType = CommandType.StoredProcedure;
             myCommand.CommandText = "TP_CreateAccount"; //name of stored procedure

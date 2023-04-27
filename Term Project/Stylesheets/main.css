@@ -12,6 +12,9 @@
 
 }
 .centered {
-    position:fixed;
-    left: 40%;
+    position:absolute;
+    left: 831px;
+    top: 175px;
+    width: 557px;
+    z-index: 1;
 }
