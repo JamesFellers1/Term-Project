@@ -79,6 +79,7 @@
     <Content Include="Stylesheets\normalize.css" />
     <Content Include="Stylesheets\webflow.css" />
     <Content Include="UserControl.ascx" />
+    <Content Include="VerificationPage.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -132,6 +133,13 @@
     <Compile Include="UserControl.ascx.designer.cs">
       <DependentUpon>UserControl.ascx</DependentUpon>
     </Compile>
+    <Compile Include="VerificationPage.aspx.cs">
+      <DependentUpon>VerificationPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VerificationPage.aspx.designer.cs">
+      <DependentUpon>VerificationPage.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -142,6 +150,12 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\OneDrive\Desktop\CIS3342\Project3\Utilities\Utilities.csproj">
+      <Project>{1eb295a2-424e-4ab2-829d-fa72c4ca1063}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

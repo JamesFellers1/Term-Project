@@ -10,7 +10,11 @@
       <h1 class="create-account-heading">Log In</h1>
       <div class="log-in-wrapper">
         <div class="w-form">
-          <form id="email-form" name="email-form" data-name="Email Form" method="get"><label for="Username-3">Username</label><input type="text" class="w-input" maxlength="256" name="Username-3" data-name="Username 3" placeholder="" id="Username-3" required=""><label for="Password-3">Password</label><input type="password" class="w-input" maxlength="256" name="Password-3" data-name="Password 3" placeholder="" id="Password-3" required="">
+          <form id="email-form" name="email-form" data-name="Email Form" method="get">
+<label for="Username-3">Username</label>
+<input type="text" class="w-input" maxlength="256" name="Username-3" data-name="Username 3" placeholder="" id="Username-3" required="">
+<label for="Password-3">Password</label>
+<input type="password" class="w-input" maxlength="256" name="Password-3" data-name="Password 3" placeholder="" id="Password-3" required="">
             <div class="login-button-wrapper"><input type="submit" value="Submit" data-wait="Please wait..." class="log-in-button w-button">
               <a href="#" class="login-forgot-password">Forgot Username or Password?</a>
             </div>
@@ -25,7 +29,6 @@
       </div>
     </div>
   </div>
-
-            </asp:Content>
+</asp:Content>
 
 
