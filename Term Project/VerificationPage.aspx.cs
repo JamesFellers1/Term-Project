@@ -13,11 +13,12 @@ namespace Term_Project
         {
             if (!IsPostBack)
             {
-                string email = Session["Email"].ToString();
-
+               /* //string email = Session["Email"].ToString();
+                
                 Email objEmail = new Email();
 
-                String strTO = Session["Email"].ToString();
+                //SWITCH TO "email" VARIABLE ABOVE WHEN TESTING 
+                String strTO = "tul16016@temple.edu";
 
                 String strFROM = "tul16016@temple.edu";
 
@@ -32,13 +33,33 @@ namespace Term_Project
                 catch (Exception ex)
                 {
                     lblDisplay.Text = "The email wasn't sent because one of the required fields was missing.";
-                }
+                }*/
 
             }
         }
         protected void btnResend_Click(object sender, EventArgs e)
         {
+            //string email = Session["Email"].ToString();
 
+            Email objEmail = new Email();
+
+            //SWITCH TO "email" VARIABLE ABOVE WHEN TESTING 
+            String strTO = "tul16016@temple.edu";
+
+            String strFROM = "tul16016@temple.edu";
+
+            String strSubject = "Verify your account.";
+            String strMessage = "Click the link to verify your account.";
+
+            try
+            {
+                objEmail.SendMail(strTO, strFROM, strSubject, strMessage);
+                lblDisplay.Text = "The email was sent.";
+            }
+            catch (Exception ex)
+            {
+                lblDisplay.Text = "The email wasn't sent because one of the required fields was missing.";
+            }
         }
 
     }

@@ -59,7 +59,7 @@
               </asp:DropDownList>
               <asp:TextBox runat="server" type="text" class="w-input" maxlength="256" name="SQ3" data-name="SQ3" placeholder="" id="txtSQ3" required=""></asp:TextBox>
 
-              <asp:Button ID="btnSubmit" runat="server" Text="Submit"  CssClass="log-in-button w-button" OnClick="btnSubmit_Click"/>
+              <asp:Button ID="btnSubmit" runat="server" Text="Submit"  CssClass="log-in-button2 w-button" OnClick="btnSubmit_Click"/>
           </form>
         </div>
       </div>
