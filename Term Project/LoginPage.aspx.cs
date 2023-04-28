@@ -75,5 +75,18 @@ namespace Term_Project
                 Response.Redirect("SearchHomesPage.aspx");
             }
         }
+
+        protected void btnDeleteCookie_Click(object sender, EventArgs e)
+        {
+            if (Request.Cookies["userInfo"] != null)
+            {
+                Response.Cookies["userInfo"].Expires = DateTime.Now.AddDays(-1);
+                lblError.Text = "Cookie Deleted!";
+            }
+            else
+            {
+                lblError.Text = "No cookie found!";
+            }
+        }
     }
 }

@@ -16,12 +16,14 @@
       <div class="log-in-wrapper">
         <div class="w-form">
               <label for="Username-3">Username</label>
-              <asp:TextBox runat="server" type="text" class="w-input" maxlength="256" name="Username-3" data-name="Username 3" placeholder="" ID="txtUsername" required=""></asp:TextBox>
+              <asp:TextBox runat="server" type="text" class="w-input" maxlength="256" name="Username-3" data-name="Username 3" placeholder="" ID="txtUsername"></asp:TextBox>
               <label for="Password-3">Password</label>
-              <asp:TextBox runat="server" type="password" CssClass="w-input" maxlength="256" name="Password" data-name="Password" placeholder="" ID="txtPassword" required=""></asp:TextBox>
+              <asp:TextBox runat="server" type="password" CssClass="w-input" maxlength="256" name="Password" data-name="Password" placeholder="" ID="txtPassword"></asp:TextBox>
             <div class="login-button-wrapper">
                 <asp:Button ID="btnLogin" runat="server" type="submit" value="Submit" data-wait="Please wait..." text="Log in" CssClass="log-in-button2 w-button" OnClick="btnLogin_Click"/>
               <a href="#" class="login-forgot-password">Forgot Username or Password?</a>
+                <asp:Button ID="btnDeleteCookie" runat="server" Text="Delete Cookie" CssClass="log-in-button2" OnClick="btnDeleteCookie_Click"/>
+
                 <asp:Label ID="lblError" runat="server" CssClass="w-file-upload-error-msg" />
             </div>
           <div class="w-form-done">
