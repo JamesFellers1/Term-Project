@@ -12,6 +12,15 @@
 
 }
 .centered {
-    position:fixed;
+    position:absolute;
     left: 40%;
+    z-index: 1;
+}
+.topcentered{
+    position: fixed;
+    left:43%;
+}
+.midcentered {
+    position: fixed;
+    left: 20%;
 }
