@@ -73,7 +73,6 @@
     <Content Include="Image\background.jpg" />
     <Content Include="LoginPage.aspx" />
     <Content Include="SearchHomesPage.aspx" />
-    <Content Include="SOAPApi.asmx" />
     <Content Include="Stylesheets\cis3342-term-project.webflow.css" />
     <Content Include="Stylesheets\main.css" />
     <Content Include="Stylesheets\navigation.css" />
@@ -128,10 +127,6 @@
     </Compile>
     <Compile Include="SearchHomesPage.aspx.designer.cs">
       <DependentUpon>SearchHomesPage.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="SOAPApi.asmx.cs">
-      <DependentUpon>SOAPApi.asmx</DependentUpon>
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="UserControl.ascx.cs">
       <DependentUpon>UserControl.ascx</DependentUpon>

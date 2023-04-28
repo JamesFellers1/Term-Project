@@ -51,12 +51,13 @@ namespace Term_Project
             catch (Exception ex)
             {
                 lblDisplay.Text = "The email wasn't sent because one of the required fields was missing.";
-            }*/
+            }
             //simple example of how to use soap api
             SOAPApi webService = new SOAPApi();
             List<int> listIntegers = new List<int> { 1, 9, 81 };
             lblDisplay.Visible = true;
-            lblDisplay.Text = "Webservice Output: " + webService.Add(listIntegers).ToString();
+            lblDisplay.Text = "Webservice Output: " + webService.Add(listIntegers).ToString();*/
+
         }
 
     }

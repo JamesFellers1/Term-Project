@@ -58,12 +58,12 @@ namespace Term_Project
             myCommand.CommandText = "TP_Login";
 
             myCommand.Parameters.AddWithValue("@username", txtUsername.Text);
-            myCommand.Parameters.AddWithValue("@password", txtPassword.Text);
-
+            myCommand.Parameters.AddWithValue("@password", encryptedPW);
 
             DBConnect checkLogin = new DBConnect();
             DataSet loginData;
             loginData = checkLogin.GetDataSet(myCommand);
+
             if (loginData.Tables[0].Rows.Count == 0 || loginData == null)
             {
                 lblError.Text = "Invalid Login, Please try again.";
