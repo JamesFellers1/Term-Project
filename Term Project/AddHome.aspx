@@ -147,7 +147,7 @@
         <label class="add-home-label" for="Year-Built">
          Year Built
         </label>
-        <input class="add-home-text-field ah-short-2 w-input" data-name="Year Built" id="Year-Built" maxlength="256" name="Year-Built" placeholder="" required="" type="number"/>
+        <input class="add-home-text-field ah-short-2 w-input" data-name="Year Built" id="Year-Built" maxlength="4" name="Year-Built" placeholder="" required="" type="number"/>
         <label class="add-home-label" for="Garage">
          Garage
         </label>

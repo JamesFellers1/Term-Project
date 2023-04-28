@@ -44,8 +44,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -180,8 +179,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\OneDrive\Desktop\CIS3342\Project3\Utilities\Utilities.csproj">
-      <Project>{1eb295a2-424e-4ab2-829d-fa72c4ca1063}</Project>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{1EB295A2-424E-4AB2-829D-FA72C4CA1063}</Project>
       <Name>Utilities</Name>
     </ProjectReference>
   </ItemGroup>
