@@ -44,6 +44,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -68,11 +70,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AddHome.aspx" />
+    <None Include="Connected Services\ServiceReference1\SOAPApi.disco" />
+    <None Include="Connected Services\ServiceReference1\configuration91.svcinfo" />
+    <None Include="Connected Services\ServiceReference1\configuration.svcinfo" />
+    <None Include="Connected Services\ServiceReference1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="CreateAccountPage.aspx" />
     <Content Include="HomePage.aspx" />
     <Content Include="Image\background.jpg" />
     <Content Include="LoginPage.aspx" />
     <Content Include="SearchHomesPage.aspx" />
+    <Content Include="SOAPApi.asmx" />
     <Content Include="Stylesheets\cis3342-term-project.webflow.css" />
     <Content Include="Stylesheets\main.css" />
     <Content Include="Stylesheets\navigation.css" />
@@ -89,6 +99,11 @@
     </Compile>
     <Compile Include="AddHome.aspx.designer.cs">
       <DependentUpon>AddHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServiceReference1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="CreateAccountPage.aspx.cs">
       <DependentUpon>CreateAccountPage.aspx</DependentUpon>
@@ -128,6 +143,10 @@
     <Compile Include="SearchHomesPage.aspx.designer.cs">
       <DependentUpon>SearchHomesPage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="SOAPApi.asmx.cs">
+      <DependentUpon>SOAPApi.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="UserControl.ascx.cs">
       <DependentUpon>UserControl.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -144,6 +163,13 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Connected Services\ServiceReference1\SOAPApi.wsdl" />
+    <Content Include="Connected Services\ServiceReference1\Term_Project.ServiceReference1.AddResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceReference1\Term_Project.ServiceReference1.HelloWorldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="packages.config" />
     <Content Include="REMaster.Master" />
     <None Include="Web.Debug.config">
@@ -158,6 +184,12 @@
       <Project>{1eb295a2-424e-4ab2-829d-fa72c4ca1063}</Project>
       <Name>Utilities</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ServiceReference1\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

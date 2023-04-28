@@ -17,14 +17,27 @@ namespace Term_Project
 
         }
 
-        protected void btnSubmit_Click(object sender, EventArgs e)
-        {
-            /*SqlCommand myCommand = new SqlCommand();
-            myCommand.CommandType = CommandType.StoredProcedure;
-            myCommand.CommandText = "Login";
 
-            myCommand.Parameters.AddWithValue("@username", txtLoginUsername.Text);
-            myCommand.Parameters.AddWithValue("@password", txtLoginPw.Text);
+        protected void btnLogin_Click(object sender, EventArgs e)
+        {
+            //encrypt pw
+            String encryptedPW = Encryptor.Encrypt(txtPassword.Text);
+            String decryptedPW = Encryptor.Decrypt(encryptedPW);
+
+            //Add Cookie
+            HttpCookie userInfo = new HttpCookie("userInfo");
+            userInfo["UserName"] = txtUsername.Text;
+            userInfo["Password"] = encryptedPW;
+            userInfo.Expires = DateTime.Now.AddHours(1);
+            Response.Cookies.Add(userInfo);
+
+            SqlCommand myCommand = new SqlCommand();
+            myCommand.CommandType = CommandType.StoredProcedure;
+            myCommand.CommandText = "TP_Login";
+            
+            myCommand.Parameters.AddWithValue("@username", txtUsername.Text);
+            myCommand.Parameters.AddWithValue("@password", txtPassword.Text);
+            
 
             DBConnect checkLogin = new DBConnect();
             DataSet loginData;
@@ -37,12 +50,8 @@ namespace Term_Project
             {
                 string str = loginData.Tables[0].Rows[0]["UserId"].ToString();
                 Session["UserID"] = str;
-                Response.Redirect("UserProfilePage.aspx");*/
+                Response.Redirect("SearchHomesPage.aspx");
             }
-
-        protected void btnLogin_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

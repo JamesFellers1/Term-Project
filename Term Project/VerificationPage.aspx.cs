@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Term_Project.ServiceReference1;
 
 namespace Term_Project
 {
@@ -41,12 +42,12 @@ namespace Term_Project
         {
             //string email = Session["Email"].ToString();
 
-            Email objEmail = new Email();
+            /*Email objEmail = new Email();
 
             //SWITCH TO "email" VARIABLE ABOVE WHEN TESTING 
             String strTO = "tul16016@temple.edu";
 
-            String strFROM = "tul16016@temple.edu";
+            String strFROM = "jamesfellers64@gmail.com";
 
             String strSubject = "Verify your account.";
             String strMessage = "Click the link to verify your account.";
@@ -59,7 +60,12 @@ namespace Term_Project
             catch (Exception ex)
             {
                 lblDisplay.Text = "The email wasn't sent because one of the required fields was missing.";
-            }
+            }*/
+             //simple example of how to use soap api
+            SOAPApi webService = new SOAPApi();
+            List<int> listIntegers = new List<int> { 1, 9, 81 };
+            lblDisplay.Visible = true;
+            lblDisplay.Text = "Webservice Output: " + webService.Add(listIntegers).ToString();
         }
 
     }
