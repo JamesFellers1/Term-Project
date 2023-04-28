@@ -2,10 +2,15 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" runat="server" contentplaceholderid="ContentPlaceHolder1">
-                <div class="navBar">
-                <asp:Label ID="lblHomeBuy" class="centered" runat="server" Font-Bold="True" Font-Names="Rockwell Condensed" Font-Size="XX-Large" style="text-align: center; color: #ffffff; top: 15px; width: 347px;" Text="Home Buy" CssClass="centered" ForeColor="White"></asp:Label>
-            </div>
-                <div class="login-section wf-section">
+    <div class="navBar">
+        <div class="topnav">
+            <a href="CreateAccountPage.aspx">Create Account</a>
+
+        </div>
+        <asp:Label ID="lblHomeBuy" class="centered" runat="server" Font-Bold="True" Font-Names="Rockwell Condensed" Font-Size="XX-Large" style="text-align: center; color: #ffffff; top: 15px; width: 347px;" Text="Home Buy" CssClass="centered" ForeColor="White"></asp:Label>
+
+    </div>
+    <div class="login-section wf-section">
     <div class="login-container container w-container">
       <h1 class="create-account-heading">Log In</h1>
       <div class="log-in-wrapper">

@@ -3,9 +3,12 @@
 </asp:Content>
 <asp:Content ID="Content2" runat="server" contentplaceholderid="ContentPlaceHolder1">
                 <div class="navBar">
+                    <div class="topnav">
+                        <a href="LoginPage.aspx">Login</a>
+
+                    </div>
                 <asp:Label ID="lblHomeBuy" class="centered" runat="server" Font-Bold="True" Font-Names="Rockwell Condensed" Font-Size="XX-Large" style="text-align: center; color: #ffffff; top: 15px; width: 347px;" Text="Home Buy" CssClass="centered" ForeColor="White"></asp:Label>
-            </div>
-                <div class="background">
+                </div>
                     <div class="register-section wf-section">
     <div class="register-container container w-container">
       <h1 class="create-account-heading">Create An Account</h1>
@@ -65,7 +68,6 @@
       </div>
     </div>
   </div>
-</div>
 
 </asp:Content>
 
