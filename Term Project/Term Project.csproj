@@ -73,6 +73,7 @@
     <Content Include="Image\background.jpg" />
     <Content Include="LoginPage.aspx" />
     <Content Include="SearchHomesPage.aspx" />
+    <Content Include="SOAPApi.asmx" />
     <Content Include="Stylesheets\cis3342-term-project.webflow.css" />
     <Content Include="Stylesheets\main.css" />
     <Content Include="Stylesheets\navigation.css" />
@@ -128,6 +129,10 @@
     <Compile Include="SearchHomesPage.aspx.designer.cs">
       <DependentUpon>SearchHomesPage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="SOAPApi.asmx.cs">
+      <DependentUpon>SOAPApi.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="UserControl.ascx.cs">
       <DependentUpon>UserControl.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -158,6 +163,9 @@
       <Project>{1EB295A2-424E-4AB2-829D-FA72C4CA1063}</Project>
       <Name>Utilities</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

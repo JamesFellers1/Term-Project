@@ -14,20 +14,21 @@ namespace Term_Project
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack){
-            
+            if (!IsPostBack)
+            {
+
             }
         }
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
+            String encryptedPW = Encryptor.Encrypt(txtPassword.Text);
 
-            
             SqlCommand myCommand = new SqlCommand();
             myCommand.CommandType = CommandType.StoredProcedure;
             myCommand.CommandText = "TP_CreateAccount"; //name of stored procedure
 
             myCommand.Parameters.AddWithValue("@username", txtUsername.Text); //to add an input parameter
-            myCommand.Parameters.AddWithValue("@password", txtPassword.Text);
+            myCommand.Parameters.AddWithValue("@password", encryptedPW);
             myCommand.Parameters.AddWithValue("@email", txtEmail.Text);
             myCommand.Parameters.AddWithValue("@name", txtName.Text);
             myCommand.Parameters.AddWithValue("@address", txtAddress.Text);
@@ -51,7 +52,7 @@ namespace Term_Project
             //Store a cookie 
             HttpCookie userInfo = new HttpCookie("userInfo");
             userInfo["UserName"] = txtUsername.Text;
-            userInfo["Password"] = txtPassword.Text;
+            userInfo["Password"] = encryptedPW;
             userInfo.Expires = DateTime.Now.AddHours(1);
             Response.Cookies.Add(userInfo);
 
