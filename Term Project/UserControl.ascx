@@ -19,7 +19,7 @@
 
         <td rowspan="4" style="width: 123px; height: 140px;" valign="top">
 
-            <asp:Image ID="imgProduct" runat="server" Height="140px" Width="120px" /></td>
+            <asp:Image ID="imgHome" runat="server" Height="140px" Width="120px" /></td>
 
         <td colspan="2">
 
