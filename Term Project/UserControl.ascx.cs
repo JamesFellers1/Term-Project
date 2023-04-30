@@ -55,7 +55,10 @@ namespace Term_Project
             objDS = objDB.GetDataSet(myCommand);
 
             lblAddress.Text = (String)objDB.GetField("HomeStreet", 0);
-
+            lblCity.Text = (String)objDB.GetField("HomeCity", 0);
+            lblState.Text = (String)objDB.GetField("HomeState", 0);
+            int zip = (int)objDB.GetField("HomeZip", 0);
+            lblZip.Text = zip.ToString();
             Decimal price = (Decimal)objDB.GetField("AskingPrice", 0);
 
             lblPrice.Text = price.ToString("C2");

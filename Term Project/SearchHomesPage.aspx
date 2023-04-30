@@ -10,14 +10,12 @@
         </div>
         <asp:Label ID="lblHomeBuy" class="centered" runat="server" Font-Bold="True" Font-Names="Rockwell Condensed" Font-Size="XX-Large" Style="text-align: center; color: #ffffff; top: 15px; width: 347px;" Text="Home Buy" CssClass="centered" ForeColor="White"></asp:Label>
     </div>
-    <div class="background">
         <div class="register-section wf-section">
             <div class="register-container container w-container">
                 <h1 class="create-account-heading">Search Homes</h1>
                 <asp:Label ID="lblError" runat="server" Text="" ForeColor="Red"></asp:Label>
-                <div>
-                    Search Criteria:
-                                <div>
+                <div>Search Criteria:
+                    <div>
                                     <asp:Label ID="lblLocation" runat="server" Text="Enter a State"></asp:Label><asp:TextBox ID="txtLocation" runat="server"></asp:TextBox></div>
                     <div>
                         <asp:Label ID="lblPrice" runat="server" Text="Enter your budget/price to stay under: "></asp:Label><asp:TextBox ID="txtPrice" runat="server"></asp:TextBox>
@@ -54,7 +52,5 @@
             </div>
 
         </div>
-    </div>
-
 </asp:Content>
 

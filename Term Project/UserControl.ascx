@@ -24,7 +24,12 @@
 
         <td colspan="2">
 
-            <asp:Label ID="lblAddress" runat="server"></asp:Label></td>
+            <asp:Label ID="lblAddress" runat="server"></asp:Label>
+            <asp:Label ID="lblCity" runat="server"></asp:Label>
+            <asp:Label ID="lblState" runat="server"></asp:Label>
+            <asp:Label ID="lblZip" runat="server"></asp:Label>
+
+        </td>
 
     </tr>
 
