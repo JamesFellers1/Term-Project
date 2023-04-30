@@ -19,10 +19,12 @@
 .topcentered{
     position: fixed;
     left:45%;
+    z-index:1;
 }
 .midcentered {
     position: fixed;
     left: 20%;
+    z-index:1;
 }
 
 .topnav {
@@ -49,4 +51,17 @@
 .topnav a.active {
   background-color: #04AA6D;
   color: white;
+}
+
+.style1 {
+    width: 124px;
+}
+
+.ctrlTable {
+    width: 100%;
+    padding:30px;
+}
+
+.pad {
+    padding: 20px;
 }

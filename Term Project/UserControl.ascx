@@ -1,25 +1,16 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="UserControl.ascx.cs" Inherits="Term_Project.UserControl" %>
-<style type="text/css">
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="UserControl.ascx.cs" Inherits="Term_Project.UserControl" %>
+<link href="Stylesheets/main.css" rel="stylesheet" type="text/css" />
+<link href="Stylesheets/cis3342-term-project.webflow.css" rel="stylesheet" type="text/css" />
 
-    .style1
 
-    {
-
-        width: 124px;
-
-    }
-
-</style>
-
-<table id="Table1" border="0" cellpadding="5" cellspacing="0"
-
-       style="width: 542px">
+<div class="pad">
+<table id="Table1" border="0" cellpadding="5" cellspacing="0" class="ctrlTable">
 
     <tr>
 
         <td rowspan="4" style="width: 123px; height: 140px;" valign="top">
 
-            <asp:Image ID="imgProduct" runat="server" Height="140px" Width="120px" /></td>
+            <asp:Image ID="imgHome" runat="server" /></td>
 
         <td colspan="2">
 
@@ -33,7 +24,12 @@
 
         <td colspan="2">
 
-            <asp:Label ID="lblDesc" runat="server"></asp:Label></td>
+            <asp:Label ID="lblAddress" runat="server"></asp:Label>
+            <asp:Label ID="lblCity" runat="server"></asp:Label>
+            <asp:Label ID="lblState" runat="server"></asp:Label>
+            <asp:Label ID="lblZip" runat="server"></asp:Label>
+
+        </td>
 
     </tr>
 
@@ -49,16 +45,11 @@
 
         <td class="style1">
 
-            <asp:Button ID="btnAdd" runat="server" Text="Add to Cart" />
+            <asp:Button ID="btnViewProfile" runat="server" CssClass="log-in-button2" Text="View Profile" />
 
             </td>
-
-        <td style="width: 300px">
-
-            <asp:TextBox ID="txtQty" runat="server" Width="45px"></asp:TextBox>
-
-        </td>
 
     </tr>
 
 </table>
+    </div>
