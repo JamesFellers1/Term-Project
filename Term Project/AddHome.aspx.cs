@@ -130,6 +130,8 @@ namespace Term_Project
         [WebMethod]
         public static ValidationData AddHomeFormValidation(string data)
         {
+            //remember to change to home street, city, state, zip
+            //and remember ImgCaption
             ValidationData testval = new ValidationData();
             testval.valid = false;
             testval.reason = data;

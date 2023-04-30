@@ -8,7 +8,10 @@ namespace Term_Project
     public class Home
     {
         public int HouseID { get; set; }
-        public string HomeAddress { get; set; }
+        public string HomeStreet { get; set; }
+        public string HomeCity { get; set; }
+        public string HomeState { get; set; }
+        public int HomeZip { get; set; }
         public string PropertyType { get; set; }
         public int HomeSize { get; set; }
         public int Bedrooms { get; set; }
@@ -20,6 +23,7 @@ namespace Term_Project
         public string HomeDescription { get; set; }
         public int AskingPrice { get; set; }
         public string Images { get; set; }
+        public string ImgCaption { get; set; }
         public int TotalSQFootage { get; set; }
         public string KitchenDimensions { get; set; }
         public string LivingRoomDimension { get; set; }
@@ -28,10 +32,13 @@ namespace Term_Project
         public string Garage { get; set; }
         public DateTime DateListed { get; set; }
 
-        public Home(int houseid, string homeaddress, string propertytype, int homesize, int bedrooms, int bathrooms, string amenities, string heating, string cooling, string utilities, string homedescription, int askingprice, string images, int totalsqfootage, string kitchendimensions, string livingroomdimension, string mainbeddimension, int yearbuilt, string garage, DateTime datelisted)
+        public Home(int houseid, string homestreet, string homecity, string homestate, int homezip, string propertytype, int homesize, int bedrooms, int bathrooms, string amenities, string heating, string cooling, string utilities, string homedescription, int askingprice, string images, string imgcaption, int totalsqfootage, string kitchendimensions, string livingroomdimension, string mainbeddimension, int yearbuilt, string garage, DateTime datelisted)
         {
             HouseID = houseid;
-            HomeAddress = homeaddress;
+            HomeStreet = homestreet;
+            HomeCity = homecity;
+            HomeState = homestate;
+            HomeZip = homezip;
             PropertyType = propertytype;
             HomeSize = homesize;
             Bedrooms = bedrooms;
@@ -43,6 +50,7 @@ namespace Term_Project
             HomeDescription = homedescription;
             AskingPrice = askingprice;
             Images = images;
+            ImgCaption = imgcaption;
             TotalSQFootage = totalsqfootage;
             KitchenDimensions = kitchendimensions;
             LivingRoomDimension = livingroomdimension;
