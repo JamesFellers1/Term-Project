@@ -15,6 +15,7 @@
     <link href="Stylesheets/webflow.css" rel="stylesheet" type="text/css" />
     <link href="Stylesheets/cis3342-term-project.webflow.css" rel="stylesheet" type="text/css" />
 
+    <link href="Stylesheets/additional.css" rel="stylesheet" type="text/css" />
 
 </head>
 <body>
@@ -35,5 +36,6 @@
             </style>
         </div>
     </form>
+    
 </body>
 </html>

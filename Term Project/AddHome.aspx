@@ -1,175 +1,364 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/REMaster.Master" AutoEventWireup="true" CodeBehind="AddHome.aspx.cs" Inherits="Term_Project.AddHome" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="add-home-section wf-section">
+    <div class="add-home-section wf-section" id="add-home-section">
      <div class="add-home-container container w-container">
-      <h1 class="add-home-main-heading">
-       Add A Home Profile
-      </h1>
+      <h1 class="add-home-main-heading">Add A Home Profile</h1>
       <div class="add-home-form w-form">
-       <form class="add-home-form-block" data-name="Add Home Form" id="wf-form-Add-Home-Form" method="get" name="wf-form-Add-Home-Form">
-        <label class="add-home-label">
-         I am the:
-        </label>
-        <label class="add-home-radio w-radio">
-         <input class="w-form-formradioinput w-radio-input" data-name="UserType" id="Home-Owner" name="UserType" required="" type="radio" value="Home Owner"/>
-         <span class="w-form-label" for="Home-Owner">
-          Home Owner
-         </span>
-        </label>
-        <label class="add-home-radio w-radio">
-         <input class="w-form-formradioinput w-radio-input" data-name="UserType" id="Real-Estate-Agent" name="UserType" required="" type="radio" value="Real Estate Agent"/>
-         <span class="w-form-label" for="Real-Estate-Agent">
-          Real Estate Agent
-         </span>
-        </label>
-        <label class="add-home-label" for="Street-Address">
-         Address
-        </label>
-        <input class="add-home-text-field w-input" data-name="Street Address" id="Street-Address" maxlength="256" name="Street-Address" placeholder="Street Address" required="" type="text"/>
-        <input class="add-home-text-field ah-short-1 w-input" data-name="City" id="City" maxlength="256" name="City" placeholder="City" required="" type="text"/>
-        <select class="add-home-text-field ah-short-1 w-select" data-name="State" id="State" name="State" required="">
-         <option value="">
-          State
-         </option>
-         <option value="First">
-          First choice
-         </option>
-         <option value="Second">
-          Second choice
-         </option>
-         <option value="Third">
-          Third choice
-         </option>
-        </select>
-        <input class="add-home-text-field ah-short-1 w-input" data-name="Zipcode" id="Zipcode" maxlength="256" name="Zipcode" placeholder="Zipcode" required="" type="text"/>
-        <label class="add-home-label" for="Property-Typye">
-         Property Type
-        </label>
-        <select class="add-home-text-field w-select" data-name="Property Typye" id="Property-Typye" name="Property-Typye" required="">
-         <option value="">
-          Select property type
-         </option>
-         <option value="Single Family">
-          Single Family
-         </option>
-         <option value="Multi Family">
-          Multi Family
-         </option>
-         <option value="Townhouse">
-          Townhouse
-         </option>
-         <option value="Condo">
-          Condo
-         </option>
-        </select>
-        <label class="add-home-label" for="Home-Size">
-         Home Details
-        </label>
-        <input class="add-home-text-field ah-short-2 w-input" data-name="Home Size" id="Home-Size" maxlength="256" name="Home-Size" placeholder="Home Size (in square feet)" required="" type="number"/>
-        <input class="add-home-text-field ah-short-2 w-input" data-name="Number of Bedrooms" id="Number-of-Bedrooms" maxlength="256" name="Number-of-Bedrooms" placeholder="# of Bedrooms" required="" type="number"/>
-        <input class="add-home-text-field ah-short-2 w-input" data-name="Number Of Bathrooms" id="Number-Of-Bathrooms" maxlength="256" name="Number-Of-Bathrooms" placeholder="# of Bathrooms" required="" type="number"/>
-        <label class="add-home-label" for="Home-Size-2">
-         Amenities
-        </label>
-        <label class="w-checkbox add-home-checkbox">
-         <input class="w-checkbox-input" data-name="Fireplace" id="Fireplace" name="Fireplace" type="checkbox"/>
-         <span class="w-form-label" for="Fireplace">
-          Fireplace
-         </span>
-        </label>
-        <label class="w-checkbox add-home-checkbox">
-         <input class="w-checkbox-input" data-name="Basement" id="Basement" name="Basement" type="checkbox"/>
-         <span class="w-form-label" for="Basement">
-          Basement
-         </span>
-        </label>
-        <label class="w-checkbox add-home-checkbox">
-         <input class="w-checkbox-input" data-name="Pool" id="Pool" name="Pool" type="checkbox"/>
-         <span class="w-form-label" for="Pool">
-          Pool
-         </span>
-        </label>
-        <label class="w-checkbox add-home-checkbox">
-         <input class="w-checkbox-input" data-name="Hot Tub" id="Hot-Tub" name="Hot-Tub" type="checkbox"/>
-         <span class="w-form-label" for="Hot-Tub">
-          Hot Tub
-         </span>
-        </label>
-        <label class="w-checkbox add-home-checkbox">
-         <input class="w-checkbox-input" data-name="Garden" id="Garden" name="Garden" type="checkbox"/>
-         <span class="w-form-label" for="Garden">
-          Garden
-         </span>
-        </label>
-        <input class="add-home-text-field w-input" data-name="Other Amenities" id="Other-Amenities" maxlength="256" name="Other-Amenities" placeholder="Other Amenities" type="text"/>
-        <label class="add-home-label" for="Heating">
-         Heating
-        </label>
-        <input class="add-home-text-field w-input" data-name="Heating" id="Heating" maxlength="256" name="Heating" placeholder="Heating" required="" type="text"/>
-        <label class="add-home-label" for="Cooling">
-         Cooling
-        </label>
-        <input class="add-home-text-field w-input" data-name="Cooling" id="Cooling" maxlength="256" name="Cooling" placeholder="Cooling" required="" type="text"/>
-        <label class="add-home-label" for="Utilities">
-         Utilities
-        </label>
-        <input class="add-home-text-field w-input" data-name="Utilities" id="Utilities" maxlength="256" name="Utilities" placeholder="Utilities" required="" type="text"/>
-        <label class="add-home-label" for="Home-Description">
-         Home Description
-        </label>
-        <textarea class="add-home-text-field add-home-text-area w-input" data-name="Home Description" id="Home-Description" maxlength="5000" name="Home-Description" placeholder="" required=""></textarea>
-        <label class="add-home-label" for="Price">
-         Asking Price
-        </label>
-        <input class="add-home-text-field ah-short-2 w-input" data-name="Price" id="Price" maxlength="256" name="Price" placeholder="$$$" required="" type="text"/>
-        <label class="add-home-label" for="tba">
-         Images
-        </label>
-        <input class="add-home-text-field w-input" data-name="tba" id="tba" maxlength="256" name="tba" placeholder="To be added, change to accept images" required="" type="text"/>
-        <label class="add-home-label" for="Total-Square-Footage">
-         Total Square Footagae
-        </label>
-        <input class="add-home-text-field ah-short-2 w-input" data-name="Total Square Footage" id="Total-Square-Footage" maxlength="256" name="Total-Square-Footage" placeholder="" required="" type="number"/>
-        <label class="add-home-label" for="Kitchen-Dimensions">
-         Kitchen Dimensions
-        </label>
-        <input class="add-home-text-field w-input" data-name="Kitchen Dimensions" id="Kitchen-Dimensions" maxlength="50" name="Kitchen-Dimensions" placeholder="" required="" type="text"/>
-        <label class="add-home-label" for="Living-Room-Dimensions">
-         Living Room Dimensions
-        </label>
-        <input class="add-home-text-field w-input" data-name="Living Room Dimensions" id="Living-Room-Dimensions" maxlength="50" name="Living-Room-Dimensions" placeholder="" required="" type="text"/>
-        <label class="add-home-label" for="Main-Bed-Dimensions">
-         Main Bed Dimensions
-        </label>
-        <input class="add-home-text-field w-input" data-name="Main Bed Dimensions" id="Main-Bed-Dimensions" maxlength="50" name="Main-Bed-Dimensions" placeholder="" required="" type="text"/>
-        <label class="add-home-label" for="Year-Built">
-         Year Built
-        </label>
-        <input class="add-home-text-field ah-short-2 w-input" data-name="Year Built" id="Year-Built" maxlength="4" name="Year-Built" placeholder="" required="" type="number"/>
-        <label class="add-home-label" for="Garage">
-         Garage
-        </label>
-        <input class="add-home-text-field w-input" data-name="Garage" id="Garage" maxlength="50" name="Garage" placeholder="" required="" type="text"/>
-        <label class="add-home-label" for="Date-Listed">
-         Date Listed
-        </label>
-        <input class="add-home-text-field ah-short-2 w-input" data-name="Date Listed" id="Date-Listed" maxlength="10" name="Date-Listed" placeholder="MM/DD/YYYY" required="" type="text"/>
-        <input class="add-home-button w-button" data-wait="Please wait..." type="submit" value="Add Home"/>
-       </form>
-       <div class="w-form-done">
-        <div>
-         Thank you! Your submission has been received!
-        </div>
-       </div>
-       <div class="w-form-fail">
-        <div>
-         Oops! Something went wrong while submitting the form.
-        </div>
-       </div>
+           <div class="add-home-form-block" data-name="Add Home Form" id="wf-form-Add-Home-Form" method="get" name="wf-form-Add-Home-Form">
+                <label class="add-home-label">I am the:</label>
+
+               <label class="add-home-radio w-radio">
+                   <asp:RadioButton runat="server" ID="HomeOwnerRadioButton" CssClass="w-form-formradioinput w-radio-input" GroupName="UserType" Value="Home Owner" required="required"/>
+                   <span class="w-form-label" for="HomeOwnerRadioButton">Home Owner</span>
+                </label>
+
+               <label class="add-home-radio w-radio">
+                    <asp:RadioButton ID="RealEstateAgentRadioButton" runat="server" CssClass="w-form-formradioinput w-radio-input" GroupName="UserType" value="Real Estate Agent" required="required" />
+                    <span class="w-form-label" for="RealEstateAgentRadioButton">Real Estate Agent</span>
+                </label>
+
+                <label class="add-home-label" for="Street-Address">Address</label>
+                <asp:TextBox ID="StreetAddressTextBox" runat="server" CssClass="add-home-text-field w-input" MaxLength="256" placeholder="Street Address" Required="True" Text="" />
+                <asp:TextBox ID="CityTextBox" runat="server" CssClass="add-home-text-field ah-short-1 w-input" MaxLength="256" placeholder="City" Required="True" Text=""/>
+                <asp:DropDownList ID="StateDropDownList" runat="server" CssClass="add-home-text-field ah-short-1 w-select" Required="True">
+                    <asp:ListItem Value="" Text="Select State" />
+                    <asp:ListItem Value="Alabama" Text="Alabama" />
+                    <asp:ListItem Value="Alaska" Text="Alaska" />
+                    <asp:ListItem Value="Arizona" Text="Arizona" />
+                    <asp:ListItem Value="Arkansas" Text="Arkansas" />
+                    <asp:ListItem Value="California" Text="California" />
+                    <asp:ListItem Value="Colorado" Text="Colorado" />
+                    <asp:ListItem Value="Connecticut" Text="Connecticut" />
+                    <asp:ListItem Value="Delaware" Text="Delaware" />
+                    <asp:ListItem Value="Florida" Text="Florida" />
+                    <asp:ListItem Value="Georgia" Text="Georgia" />
+                    <asp:ListItem Value="Hawaii" Text="Hawaii" />
+                    <asp:ListItem Value="Idaho" Text="Idaho" />
+                    <asp:ListItem Value="Illinois" Text="Illinois" />
+                    <asp:ListItem Value="Indiana" Text="Indiana" />
+                    <asp:ListItem Value="Iowa" Text="Iowa" />
+                    <asp:ListItem Value="Kansas" Text="Kansas" />
+                    <asp:ListItem Value="Kentucky" Text="Kentucky" />
+                    <asp:ListItem Value="Louisiana" Text="Louisiana" />
+                    <asp:ListItem Value="Maine" Text="Maine" />
+                    <asp:ListItem Value="Maryland" Text="Maryland" />
+                    <asp:ListItem Value="Massachusetts" Text="Massachusetts" />
+                    <asp:ListItem Value="Michigan" Text="Michigan" />
+                    <asp:ListItem Value="Minnesota" Text="Minnesota" />
+                    <asp:ListItem Value="Mississippi" Text="Mississippi" />
+                    <asp:ListItem Value="Missouri" Text="Missouri" />
+                    <asp:ListItem Value="Montana" Text="Montana" />
+                    <asp:ListItem Value="Nebraska" Text="Nebraska" />
+                    <asp:ListItem Value="Nevada" Text="Nevada" />
+                    <asp:ListItem Value="New Hampshire" Text="New Hampshire" />
+                    <asp:ListItem Value="New Jersey" Text="New Jersey" />
+                    <asp:ListItem Value="New Mexico" Text="New Mexico" />
+                    <asp:ListItem Value="New York" Text="New York" />
+                    <asp:ListItem Value="North Carolina" Text="North Carolina" />
+                    <asp:ListItem Value="North Dakota" Text="North Dakota" />
+                    <asp:ListItem Value="Ohio" Text="Ohio" />
+                    <asp:ListItem Value="Oklahoma" Text="Oklahoma" />
+                    <asp:ListItem Value="Oregon" Text="Oregon" />
+                    <asp:ListItem Value="Pennsylvania" Text="Pennsylvania" />
+                    <asp:ListItem Value="Rhode Island" Text="Rhode Island" />
+                    <asp:ListItem Value="South Carolina" Text="South Carolina" />
+                    <asp:ListItem Value="South Dakota" Text="South Dakota" />
+                    <asp:ListItem Value="Tennessee" Text="Tennessee" />
+                    <asp:ListItem Value="Texas" Text="Texas" />
+                    <asp:ListItem Value="Utah" Text="Utah" />
+                    <asp:ListItem Value="Vermont" Text="Vermont" />
+                    <asp:ListItem Value="Virginia" Text="Virginia" />
+                    <asp:ListItem Value="Washington" Text="Washington" />
+                    <asp:ListItem Value="West Virginia" Text="West Virginia" />
+                    <asp:ListItem Value="Wisconsin" Text="Wisconsin" />
+                    <asp:ListItem Value="Wyoming" Text="Wyoming" />
+                </asp:DropDownList>
+                <asp:TextBox ID="ZipcodeTextBox" runat="server" CssClass="add-home-text-field ah-short-1 w-input" MaxLength="5" placeholder="Zipcode" Required="True" Text=""/>
+
+
+                <label class="add-home-label" for="Property-Typye">Property Type</label>
+                <asp:DropDownList ID="PropertyTypeDropDownList" runat="server" CssClass="add-home-text-field w-select" Required="True">
+                    <asp:ListItem Value="Single-Family" Text="Single-Family" />
+                    <asp:ListItem Value="Multi-Family" Text="Multi-Family" />
+                    <asp:ListItem Value="Townhouse" Text="Townhouse" />
+                    <asp:ListItem Value="Condo" Text="Condo" />
+                </asp:DropDownList>
+               
+
+                <label class="add-home-label" for="Home-Size">Home Details</label>
+                <asp:TextBox ID="HomeSizeTextBox" runat="server" CssClass="add-home-text-field ah-short-2 w-input" MaxLength="256" placeholder="Home size (in square ft)" Required="True" Text="" Type="number"/>
+                <asp:TextBox ID="NumberOfBedroomsTextBox" runat="server" CssClass="add-home-text-field ah-short-2 w-input" MaxLength="256" placeholder="# of Bedrooms" Required="True" Text="" Type="number"/>
+                <asp:TextBox ID="NumberOfBathroomsTextBox" runat="server" CssClass="add-home-text-field ah-short-2 w-input" MaxLength="256" placeholder="# of Bathrooms" Required="True" Text="" Type="number"/>
+               
+
+                <label class="add-home-label" for="Home-Size-2">Amenities</label>
+                <label class="w-checkbox add-home-checkbox">
+                  <asp:CheckBox ID="FireplaceCheckBox" runat="server" CssClass="w-checkbox-input" data-name="Fireplace" />
+                  <span class="w-form-label" for="FireplaceCheckBox">Fireplace</span>
+                </label>
+                <label class="w-checkbox add-home-checkbox">
+                    <asp:CheckBox ID="BasementCheckBox" runat="server" CssClass="w-checkbox-input" data-name="Basement" />
+                    <span class="w-form-label" for="BasementCheckBox">Basement</span>
+                </label>
+                <label class="w-checkbox add-home-checkbox">
+                    <asp:CheckBox ID="PoolCheckBox" runat="server" CssClass="w-checkbox-input" data-name="Pool" />
+                    <span class="w-form-label" for="PoolCheckBox">Pool</span>
+                </label>
+                <label class="w-checkbox add-home-checkbox">
+                    <asp:CheckBox ID="HottubCheckBox" runat="server" CssClass="w-checkbox-input" data-name="Hot-Tub" />
+                    <span class="w-form-label" for="HottubCheckBox">Hot-Tub</span>
+                </label>
+                <label class="w-checkbox add-home-checkbox">
+                    <asp:CheckBox ID="GardenCheckBox" runat="server" CssClass="w-checkbox-input" data-name="Garden" />
+                    <span class="w-form-label" for="GardenCheckBox">Garden</span>
+                </label>
+                <asp:TextBox ID="OtherAmenitiesTextBox" runat="server" CssClass="add-home-text-field w-input" MaxLength="256" placeholder="Other Amenities" Text=""/>
+
+                <label class="add-home-label" for="Heating">Heating</label>
+                <asp:TextBox ID="HeatingTextBox" runat="server" CssClass="add-home-text-field w-input" MaxLength="256" Required="True" Text=""/>
+
+                <label class="add-home-label" for="Cooling">Cooling</label>
+                <asp:TextBox ID="CoolingTextBox" runat="server" CssClass="add-home-text-field w-input" MaxLength="256" Required="True" Text=""/>
+
+                <label class="add-home-label" for="Utilities">Utilities</label>
+                <asp:TextBox ID="UtilitiesTextBox" runat="server" CssClass="add-home-text-field w-input" MaxLength="256" Required="True" Text=""/>
+
+                <label class="add-home-label" for="Home-Description">Home Description</label>
+                <asp:TextBox ID="HomeDescriptionTextBox" runat="server" TextMode="MultiLine" Rows="4" CssClass="add-home-text-field add-home-text-area w-input" placeholder="" Required="True"></asp:TextBox>
+
+                <label class="add-home-label" for="Price">Asking Price</label>
+                <asp:TextBox ID="AskingPriceTextBox" runat="server" CssClass="add-home-text-field w-input ah-short-2" MaxLength="256" placeholder="$$$" Required="True" Text="" Type="number"/>
+
+                <label class="add-home-label">Main Image</label>
+                <asp:FileUpload ID="HomeImageUpload" runat="server" accept="image/*"/>
+
+                <label class="add-home-label" for="Total-Square-Footage">Total Square Footage</label>
+                <asp:TextBox ID="TotalSquareFootageTextBox" runat="server" CssClass="add-home-text-field ah-short-2 w-input" data-name="Total Square Footage" MaxLength="256" Name="Total-Square-Footage" Placeholder="" Required="True" Type="number"></asp:TextBox>
+
+                <label class="add-home-label" for="Kitchen-Dimensions">Kitchen Dimensions</label>
+                <asp:TextBox ID="KitchenDimensionsTextBox" runat="server" CssClass="add-home-text-field w-input" MaxLength="256" Required="True" Text=""/>
+
+                <label class="add-home-label" for="Living-Room-Dimensions">Living Room Dimensions</label>
+                <asp:TextBox ID="LivingRoomDimensionsTextBox" runat="server" CssClass="add-home-text-field w-input" MaxLength="256" Required="True" Text=""/>
+
+                <label class="add-home-label" for="Main-Bed-Dimensions">Main Bed Dimensions</label>
+                <asp:TextBox ID="MainBedDimensionsTextBox" runat="server" CssClass="add-home-text-field w-input" MaxLength="256" Required="True" Text=""/>
+
+                <label class="add-home-label" for="Year-Built">Year Built</label>
+                <asp:TextBox ID="YearBuiltTextBox" runat="server" CssClass="add-home-text-field ah-short-2 w-input" MaxLength="4" Required="True" Text="" Type="number"/>
+
+                <label class="add-home-label" for="Garage">Garage</label>
+                <asp:TextBox ID="GarageTextBox" runat="server" CssClass="add-home-text-field w-input" MaxLength="50" Required="True" Text=""/>
+
+                <label class="add-home-label" for="Date-Listed">Date Listed</label>
+                <asp:TextBox ID="DateListedTextBox" runat="server" CssClass="add-home-text-field ah-short-2 w-input" MaxLength="10" Required="True" Text="" placeholder="MM/DD/YYYY"/>
+
+                <asp:Button ID="AddHomeButton" runat="server" CssClass="add-home-button w-button" Text="Add Home" style="display: none;"/>
+                <button id="ajax-add-home-button" class="add-home-button w-button">Add Home</button>
+                <asp:Label Text="Fixed Label" ID="ErrorLabel" runat="server" CssClass="add-home-error-label"/>
+
+               
+           </div>
       </div>
      </div>
     </div>
+
+
+
+    <div class="login-section wf-section add-home-success-section" id="add-home-success-section">
+        <div class="login-container container w-container">
+          <h3 class="create-account-heading add-home-success-heading">Success</h3>
+          <div class="log-in-wrapper">
+            <div class="w-form">
+                <p>Congratulations! You've successfully listed a house.</p>
+                <div class="add-home-success-button-wrapper">
+                    <a href="HomePage.aspx" class="add-home-success-button w-button">Back To Dashboard</a>
+                    <button class="add-home-success-button w-button" id="another-home-add">Add Another Home</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+    <script>
+        
+        var anotherHomeAddButton = document.getElementById("another-home-add");
+        anotherHomeAddButton.addEventListener("click", function () {
+            document.getElementById("add-home-section").style.display = "block";
+            document.getElementById("add-home-success-section").style.display = "none";
+        });
+
+
+        var hideAddHomeForm = function () {
+            document.getElementById("add-home-section").style.display = "none";
+            document.getElementById("add-home-success-section").style.display = "block";
+        }
+
+        var showAddHomeForm = function () {
+            document.getElementById("add-home-section").style.display = "block";
+            document.getElementById("add-home-success-section").style.display = "none";
+        }
+
+        var clearAddHomeForm = function () {
+            //radio buttons
+            document.getElementById("<%=HomeOwnerRadioButton.ClientID%>").checked = false;
+            document.getElementById("<%=RealEstateAgentRadioButton.ClientID%>").checked = false;
+
+            //text fields
+            var textInputs = document.querySelectorAll("input[type='text']");
+            for (var i = 0; i < textInputs.length; i++) {
+                textInputs[i].value = "";
+            }
+
+            //number field
+            var numberInputs = document.querySelectorAll("input[type='number']");
+            for (var i = 0; i < numberInputs.length; i++) {
+                numberInputs[i].value = "";
+            }
+
+            //drop down lists
+            document.getElementById("<%=StateDropDownList.ClientID%>").selectedIndex = 0;
+            document.getElementById("<%=PropertyTypeDropDownList.ClientID%>").selectedIndex = 0;
+
+            //checkboxes    
+            var checkBoxInputs = document.querySelectorAll("input[type='checkbox']");
+            for (var i = 0; i < checkBoxInputs.length; i++) {
+                checkBoxInputs[i].checked = false;
+            }
+
+            //image upload
+            document.getElementById("<%=HomeImageUpload.ClientID%>").value = "";
+
+            //text area
+            document.getElementById("<%=HomeDescriptionTextBox.ClientID%>").value = "";
+        }
+
+        var addSample = function () {
+            //radio buttons
+            document.getElementById("<%=HomeOwnerRadioButton.ClientID%>").checked = true;
+
+            //text fields
+            var textInputs = document.querySelectorAll("input[type='text']");
+            for (var i = 0; i < textInputs.length; i++) {
+                textInputs[i].value = "sampletext";
+            }
+
+            //date listed
+            document.getElementById("<%=DateListedTextBox.ClientID%>").value = "11/11/1111";
+
+            //number field
+            var numberInputs = document.querySelectorAll("input[type='number']");
+            for (var i = 0; i < numberInputs.length; i++) {
+                numberInputs[i].value = "1234";
+            }
+
+            //drop down lists
+            document.getElementById("<%=StateDropDownList.ClientID%>").selectedIndex = 4;
+            document.getElementById("<%=PropertyTypeDropDownList.ClientID%>").selectedIndex = 0;
+
+            //checkboxes    
+            document.getElementById("<%=FireplaceCheckBox.ClientID%>").checked = true;
+
+            //text area
+            document.getElementById("<%=HomeDescriptionTextBox.ClientID%>").value = "sample text";
+        }
+
+        window.onload = function () {
+            showAddHomeForm();
+            document.getElementById("ajax-add-home-button").addEventListener("click", function (event) {
+                event.preventDefault()
+                getInfo();
+            })
+            
+        }
+
+        var xmlhttp;
+
+        try {
+
+            // Code for IE7+, Firefox, Chrome, Opera, Safari
+
+            xmlhttp = new XMLHttpRequest();
+
+        }
+
+        catch (try_older_microsoft) {
+
+            try {
+
+                // Code for IE6, IE5
+
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+
+            }
+
+            catch (other) {
+
+                xmlhttp = false;
+
+                alert("Your browser doesn't support AJAX!");
+
+            }
+
+        }
+
+        function getInfo() {
+
+            var data = {};
+            data["radioChecked"] = 1; //1=true usually
+            if (document.getElementById("<%=HomeOwnerRadioButton.ClientID%>").checked == false && document.getElementById("<%=RealEstateAgentRadioButton.ClientID%>").checked == false) {
+                data["radioChecked"] = 0;
+            }
+            data["state"] = document.getElementById("<%=StateDropDownList.ClientID%>").value;
+
+                data["imageUploaded"] = 0
+                var imageFile = document.getElementById("<%=HomeImageUpload.ClientID%>").files;
+                if (imageFile != null) {
+                    if (imageFile && imageFile[0] && imageFile[0].type.startsWith("image/")) {
+                        data["imageUploaded"] = 1;
+                    }
+                }
+
+            data["dateListed"] = document.getElementById("<%=DateListedTextBox.ClientID%>").value;
+
+            // Open a new asynchronous request, set the callback function, and send the request.
+
+            xmlhttp.open("POST", "AddHome.aspx/AddHomeFormValidation", true);
+
+            xmlhttp.onreadystatechange = onComplete;
+
+            // set the HTTP request headers for the information being sent using POST
+
+            xmlhttp.setRequestHeader("Content-type", "application/json");
+
+            xmlhttp.send(JSON.stringify(data));
+
+        }
+
+        // Callback function used to update the page when the server completes a response
+
+        // to an asynchronous request.
+
+        function onComplete() {
+
+            //Response is READY and Status is OK
+
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+
+                console.log(xmlhttp.responseText)
+
+            }
+
+        }
+
+    </script>
 
 </asp:Content>

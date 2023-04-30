@@ -73,6 +73,7 @@
     <Content Include="Image\background.jpg" />
     <Content Include="LoginPage.aspx" />
     <Content Include="SearchHomesPage.aspx" />
+    <Content Include="Stylesheets\additional.css" />
     <Content Include="Stylesheets\cis3342-term-project.webflow.css" />
     <Content Include="Stylesheets\main.css" />
     <Content Include="Stylesheets\navigation.css" />
@@ -85,11 +86,11 @@
   <ItemGroup>
     <Compile Include="AddHome.aspx.cs">
       <DependentUpon>AddHome.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="AddHome.aspx.designer.cs">
       <DependentUpon>AddHome.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Home.cs" />
     <Compile Include="CreateAccountPage.aspx.cs">
       <DependentUpon>CreateAccountPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -161,6 +162,9 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="JS\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
