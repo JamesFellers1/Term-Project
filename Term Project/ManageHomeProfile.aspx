@@ -65,9 +65,6 @@
                     </asp:DropDownList>
                     <asp:TextBox ID="ZipcodeTextBox" runat="server" CssClass="add-home-text-field ah-short-1 w-input" MaxLength="5" placeholder="Zipcode" Required="True" Text=""/>
 
-                   <asp:DataList runat="server">
-                       <ItemTemplate></ItemTemplate>
-                   </asp:DataList>
 
                     <label class="add-home-label" for="Property-Typye">Property Type</label>
                     <asp:DropDownList ID="PropertyTypeDropDownList" runat="server" CssClass="add-home-text-field w-select" Required="True">
@@ -102,11 +99,11 @@
                     <label class="add-home-label" for="Price">Asking Price</label>
                     <asp:TextBox ID="AskingPriceTextBox" runat="server" CssClass="add-home-text-field w-input ah-short-2" MaxLength="256" placeholder="$$$" Required="True" Text="" Type="number"/>
 
-                    <label class="add-home-label">Main Image</label>
+                    <label class="add-home-label">Update Image</label>
                     <asp:FileUpload ID="HomeImageUpload" runat="server" accept="image/*"/>
                     <asp:TextBox ID="ImageCaptionTextBox" runat="server" CssClass="add-home-text-field w-input" MaxLength="256" placeholder="Image Caption" Text=""/>
                     <p class="current-image-show current-image-title">Current Image</p>
-                    <img src="https://images.pexels.com/photos/1115804/pexels-photo-1115804.jpeg" alt="Current House Image" id="current-house-image" class="current-image-show"/>
+                    <asp:Image ImageUrl="https://images.pexels.com/photos/1115804/pexels-photo-1115804.jpeg" runat="server" CssClass="current-image-show" alt="Current House Image"/>
 
                     <label class="add-home-label" for="Total-Square-Footage">Total Square Footage</label>
                     <asp:TextBox ID="TotalSquareFootageTextBox" runat="server" CssClass="add-home-text-field ah-short-2 w-input" data-name="Total Square Footage" MaxLength="256" Name="Total-Square-Footage" Placeholder="" Required="True" Type="number"></asp:TextBox>

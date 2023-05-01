@@ -21,7 +21,6 @@ namespace Term_Project
         protected void Page_Load(object sender, EventArgs e)
         {
             ErrorLabel.Style["display"] = "none";
-            AddHomeButton.Click -= AddHomeButton_Click;
         }
 
         protected void AddHomeButton_Click(object sender, EventArgs e)
@@ -122,23 +121,12 @@ namespace Term_Project
                 }
                 newHome.DateListed = datelisted;
 
-                //store in database (coming soon)
+                
 
                 //redirect to success page
             }
         }
 
-        [WebMethod]
-        public static ValidationData AddHomeFormValidation(string data)
-        {
-            //remember to change to home street, city, state, zip
-            //and to check that zipcode is number
-            //and remember ImgCaption
-            ValidationData testval = new ValidationData();
-            testval.valid = false;
-            testval.reason = data;
-            return testval;
-
-        }
+        
     }
 }

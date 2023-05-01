@@ -72,5 +72,10 @@ namespace Term_Project
             FieldInfo[] fields = type.GetFields(BindingFlags.Instance | BindingFlags.Public);
             return fields;
         }
+
+        public string GetAddress()
+        {
+            return HomeStreet + " " + HomeCity + " " + HomeState + " " + HomeZip;
+        }
     }
 }

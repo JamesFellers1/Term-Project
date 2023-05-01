@@ -6,6 +6,7 @@
     <div class="add-home-section wf-section" id="add-home-section">
      <div class="add-home-container container w-container">
       <h1 class="add-home-main-heading">Add A Home Profile</h1>
+      <asp:Label Text="Fixed Label" ID="ErrorLabel" runat="server" CssClass="add-home-error-label"/>
       <div class="add-home-form w-form">
            <div class="add-home-form-block" data-name="Add Home Form" id="wf-form-Add-Home-Form" method="get" name="wf-form-Add-Home-Form">
                 <label class="add-home-label">I am the:</label>
@@ -157,9 +158,9 @@
                 <label class="add-home-label" for="Date-Listed">Date Listed</label>
                 <asp:TextBox ID="DateListedTextBox" runat="server" CssClass="add-home-text-field ah-short-2 w-input" MaxLength="10" Required="True" Text="" placeholder="MM/DD/YYYY"/>
 
-                <asp:Button ID="AddHomeButton" runat="server" CssClass="add-home-button w-button" Text="Add Home" style="display: none;"/>
-                <button id="ajax-add-home-button" class="add-home-button w-button">Add Home</button>
-                <asp:Label Text="Fixed Label" ID="ErrorLabel" runat="server" CssClass="add-home-error-label"/>
+                <asp:Button ID="AddHomeButton" runat="server" CssClass="add-home-button w-button" Text="Add Home" OnClick="AddHomeButton_Click" />
+                <button id="ajax-add-home-button" class="add-home-button w-button" style="display: none;">Add Home</button>
+                
 
                
            </div>
@@ -275,7 +276,7 @@
         window.onload = function () {
             showAddHomeForm();
             document.getElementById("ajax-add-home-button").addEventListener("click", function (event) {
-                event.preventDefault()
+                event.preventDefault();
                 getInfo();
             })
             
