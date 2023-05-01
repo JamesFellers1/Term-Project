@@ -7,5 +7,8 @@ namespace Term_Project
 {
     public class HomeShowing
     {
+        public Home SelectedHome { get; set; }
+        public DateTime scheduledDate { get; set; }
+
     }
 }
