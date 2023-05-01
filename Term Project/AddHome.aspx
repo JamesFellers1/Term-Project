@@ -275,91 +275,9 @@
 
         window.onload = function () {
             showAddHomeForm();
-            document.getElementById("ajax-add-home-button").addEventListener("click", function (event) {
-                event.preventDefault();
-                getInfo();
-            })
-            
         }
 
-        var xmlhttp;
-
-        try {
-
-            // Code for IE7+, Firefox, Chrome, Opera, Safari
-
-            xmlhttp = new XMLHttpRequest();
-
-        }
-
-        catch (try_older_microsoft) {
-
-            try {
-
-                // Code for IE6, IE5
-
-                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-
-            }
-
-            catch (other) {
-
-                xmlhttp = false;
-
-                alert("Your browser doesn't support AJAX!");
-
-            }
-
-        }
-
-        function getInfo() {
-
-            var data = {};
-            data["radioChecked"] = 1; //1=true usually
-            if (document.getElementById("<%=HomeOwnerRadioButton.ClientID%>").checked == false && document.getElementById("<%=RealEstateAgentRadioButton.ClientID%>").checked == false) {
-                data["radioChecked"] = 0;
-            }
-            data["state"] = document.getElementById("<%=StateDropDownList.ClientID%>").value;
-
-                data["imageUploaded"] = 0
-                var imageFile = document.getElementById("<%=HomeImageUpload.ClientID%>").files;
-                if (imageFile != null) {
-                    if (imageFile && imageFile[0] && imageFile[0].type.startsWith("image/")) {
-                        data["imageUploaded"] = 1;
-                    }
-                }
-
-            data["dateListed"] = document.getElementById("<%=DateListedTextBox.ClientID%>").value;
-
-            // Open a new asynchronous request, set the callback function, and send the request.
-
-            xmlhttp.open("POST", "AddHome.aspx/AddHomeFormValidation", true);
-
-            xmlhttp.onreadystatechange = onComplete;
-
-            // set the HTTP request headers for the information being sent using POST
-
-            xmlhttp.setRequestHeader("Content-type", "application/json");
-
-            xmlhttp.send(JSON.stringify(data));
-
-        }
-
-        // Callback function used to update the page when the server completes a response
-
-        // to an asynchronous request.
-
-        function onComplete() {
-
-            //Response is READY and Status is OK
-
-            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-
-                console.log(xmlhttp.responseText)
-
-            }
-
-        }
+        
 
     </script>
 

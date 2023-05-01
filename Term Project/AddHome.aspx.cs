@@ -8,8 +8,13 @@ using System.Web.Services;
 using System.IO;
 using System.Globalization;
 using System.Web.Script.Serialization;
+<<<<<<< HEAD
 using System.Net.Http;
 using System.Text;
+=======
+using System.Net;
+using System.Net.Http;
+>>>>>>> idrees
 
 namespace Term_Project
 {
@@ -123,7 +128,53 @@ namespace Term_Project
                 }
                 newHome.DateListed = datelisted;
 
-                
+                string apiURL = "https://cis-iis2.temple.edu/Spring2023/CIS3342_tul16016/WebAPI/api/home";
+                string postData = @"{
+                    ""HomeStreet"": ""123 Main St"",
+                    ""HomeCity"": ""Philadelphia"",
+                    ""HomeState"": ""Pennsylvania"",
+                    ""HomeZip"": 19104,
+                    ""PropertyType"": ""Single-Family"",
+                    ""HomeSize"": 1500,
+                    ""Bedrooms"": 3,
+                    ""Bathrooms"": 2,
+                    ""Amenities"": ""Fireplace, Pool"",
+                    ""Heating"": ""Gas"",
+                    ""Cooling"": ""Central Air"",
+                    ""Utilities"": ""Electric, Gas"",
+                    ""HomeDescription"": ""Beautiful home in a great neighborhood"",
+                    ""AskingPrice"": 300000,
+                    ""Images"": ""image1.jpg"",
+                    ""ImgCaption"": ""Front view, Backyard"",
+                    ""TotalSQFootage"": 2000,
+                    ""KitchenDimensions"": ""10'x12'"",
+                    ""LivingRoomDimension"": ""20'x15'"",
+                    ""MainBedDimension"": ""15'x15'"",
+                    ""YearBuilt"": 1990,
+                    ""Garage"": ""Exists"",
+                    ""DateListed"": ""2023-05-10T00:00:00""
+                }";
+
+
+                WebRequest request = WebRequest.Create(apiURL);
+                request.Method = "POST";
+                request.ContentType = "application/json";
+                request.ContentLength = postData.Length;
+
+                using (var streamWriter = new StreamWriter(request.GetRequestStream()))
+                {
+                    streamWriter.Write(postData);
+                }
+
+                WebResponse response = request.GetResponse();
+
+                using (var streamReader = new StreamReader(response.GetResponseStream()))
+                {
+                    string result = streamReader.ReadToEnd();
+                }
+
+                response.Close();
+
 
                 //redirect to success page
             }
