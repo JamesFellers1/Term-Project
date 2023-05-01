@@ -91,7 +91,7 @@ namespace Term_Project
                 newHome.Utilities = UtilitiesTextBox.Text;
                 newHome.HomeDescription = HomeDescriptionTextBox.Text;
 
-                newHome.AskingPrice = Int16.Parse(AskingPriceTextBox.Text);
+                newHome.AskingPrice = Convert.ToDecimal(Int16.Parse(AskingPriceTextBox.Text));
 
                 if (!HomeImageUpload.HasFile) {
                     ErrorLabel.Text = "Image must be uploaded";

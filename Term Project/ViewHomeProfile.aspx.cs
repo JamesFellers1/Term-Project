@@ -29,7 +29,7 @@ namespace Term_Project
             givenHome.Cooling = "Yes";
             givenHome.Utilities = "Yes";
             givenHome.HomeDescription = "A nice home";
-            givenHome.AskingPrice = 300000;
+            givenHome.AskingPrice = Convert.ToDecimal(300000);
             givenHome.TotalSQFootage = 2000;
             givenHome.KitchenDimensions = "A lot";
             givenHome.LivingRoomDimension = "A lot";
@@ -83,7 +83,7 @@ namespace Term_Project
             homeData.Add(new { Heading = "Home Description", Data = givenHome.HomeDescription });
 
             
-            homeData.Add(new { Heading = "State", Data = givenHome.HomeState.ToString() });
+            homeData.Add(new { Heading = "Asking Price", Data = givenHome.AskingPrice.ToString() });
 
             
             homeData.Add(new { Heading = "Total Square Footage", Data = givenHome.HomeState.ToString() });

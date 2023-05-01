@@ -30,7 +30,7 @@ namespace Term_Project
             givenHome.Cooling = "Yes";
             givenHome.Utilities = "Yes";
             givenHome.HomeDescription = "A nice home";
-            givenHome.AskingPrice = 300000;
+            givenHome.AskingPrice = Convert.ToDecimal(300000);
             givenHome.TotalSQFootage = 2000;
             givenHome.KitchenDimensions = "A lot";
             givenHome.LivingRoomDimension = "A lot";
