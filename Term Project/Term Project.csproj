@@ -172,6 +172,7 @@
     <Content Include="Image\background.jpg" />
     <Content Include="LoginPage.aspx" />
     <Content Include="ManageHomeProfile.aspx" />
+    <Content Include="ScheduleHomeShowing.aspx" />
     <Content Include="SearchHomesPage.aspx" />
     <Content Include="Stylesheets\additional.css" />
     <Content Include="Stylesheets\cis3342-term-project.webflow.css" />
@@ -230,6 +231,13 @@
     </Compile>
     <Compile Include="REMaster.Master.designer.cs">
       <DependentUpon>REMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleHomeShowing.aspx.cs">
+      <DependentUpon>ScheduleHomeShowing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScheduleHomeShowing.aspx.designer.cs">
+      <DependentUpon>ScheduleHomeShowing.aspx</DependentUpon>
     </Compile>
     <Compile Include="SearchHomesPage.aspx.cs">
       <DependentUpon>SearchHomesPage.aspx</DependentUpon>

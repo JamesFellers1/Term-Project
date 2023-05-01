@@ -308,6 +308,82 @@ body {
     padding: 14px;
 }
 
+
+.shs-container.container {
+    min-height: 100vh;
+    background-color: #212121;
+}
+
+.shs-heading {
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.schedule-home-detail-wrapper {
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+}
+
+.shs-div-block {
+    width: 50%;
+    color: #fff;
+    padding: 20px;
+}
+
+.shs-rea-text, .shs-profile-text {
+    margin-bottom: 10px;
+}
+
+    .shs-profile-text.shs-detail-header {
+        margin-bottom: 3px;
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+.shs-image-holder {
+    min-height: 250px;
+    border: 1px solid #fff;
+}
+
+.shs-label.shs-label-2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.shs-schedule-button {
+    width: 100px;
+    background-color: rgba(56, 152, 236, 0);
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+    .shs-schedule-button:hover {
+        color: #212121;
+        background-color: #fff;
+    }
+
+.shs-disabled-button {
+    width: 100px;
+    cursor: not-allowed;
+    background-color: #454545;
+    border: 2px solid #454545;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+    .shs-disabled-button:hover {
+        color: #fff;
+    }
+
 @media screen and (max-width: 991px) {
     .icon {
         font-size: 26px;
