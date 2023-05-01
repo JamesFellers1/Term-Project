@@ -33,7 +33,7 @@ namespace Term_Project
         public string Garage { get; set; }
         public DateTime DateListed { get; set; }
 
-        public Home(int houseid, string homestreet, string homecity, string homestate, int homezip, string propertytype, int homesize, int bedrooms, int bathrooms, string amenities, string heating, string cooling, string utilities, string homedescription, int askingprice, string images, string imgcaption, int totalsqfootage, string kitchendimensions, string livingroomdimension, string mainbeddimension, int yearbuilt, string garage, DateTime datelisted)
+        public Home(int houseid, string homestreet, string homecity, string homestate, int homezip, string propertytype, int homesize, int bedrooms, int bathrooms, string amenities, string heating, string cooling, string utilities, string homedescription, decimal askingprice, string images, string imgcaption, int totalsqfootage, string kitchendimensions, string livingroomdimension, string mainbeddimension, int yearbuilt, string garage, DateTime datelisted)
         {
             HouseID = houseid;
             HomeStreet = homestreet;
