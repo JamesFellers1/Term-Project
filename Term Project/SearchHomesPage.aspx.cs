@@ -19,6 +19,9 @@ namespace Term_Project
             for (int recordNumber = 0; recordNumber < count; recordNumber++)
 
             {
+
+
+                //USER CONTROL
                 String str = objDB.GetField("HouseId", recordNumber).ToString();
                 // Register the ASCX control with the page and typecast it to the appropriate class ProductDisplay
 
