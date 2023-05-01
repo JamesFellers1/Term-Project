@@ -23,8 +23,8 @@ namespace Term_Project
         public string Utilities { get; set; }
         public string HomeDescription { get; set; }
         public int AskingPrice { get; set; }
-        public List<string> Images { get; set; }
-        public List<string> ImgCaption { get; set; }
+        public List<string> Images = new List<string>();
+        public List<string> ImgCaption = new List<string>();
         public int TotalSQFootage { get; set; }
         public string KitchenDimensions { get; set; }
         public string LivingRoomDimension { get; set; }
