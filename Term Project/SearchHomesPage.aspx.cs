@@ -16,7 +16,7 @@ namespace Term_Project
         protected void Page_Load(object sender, EventArgs e)
         {
             string apiURL = "https://cis-iis2.temple.edu/Spring2023/CIS3342_tul16016/WebAPI/api/home";
-            lblType.Text = "You are a " + Session["UserType"].ToString();
+            //lblType.Text = "You are a " + Session["UserType"].ToString();
             // Create an HTTP Web Request and get the HTTP Web Response from the server.
             //http://localhost:35245/api/Home
             WebRequest request = WebRequest.Create(apiURL);

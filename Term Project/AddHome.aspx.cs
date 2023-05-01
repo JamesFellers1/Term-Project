@@ -8,6 +8,8 @@ using System.Web.Services;
 using System.IO;
 using System.Globalization;
 using System.Web.Script.Serialization;
+using System.Net.Http;
+using System.Text;
 
 namespace Term_Project
 {
@@ -121,6 +123,10 @@ namespace Term_Project
                     return;
                 }
                 newHome.DateListed = datelisted;
+
+                string apiURL = "https://cis-iis2.temple.edu/Spring2023/CIS3342_tul16016/WebAPI/api/home";
+
+                var httpClient = new HttpClient();
 
                 //store in database (coming soon)
 

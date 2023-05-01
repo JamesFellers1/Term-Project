@@ -42,7 +42,7 @@ namespace Term_Project
             String strTO = "tul16016@temple.edu";
             String strFROM = "jamesfellers64@gmail.com";
             String strSubject = "Verify your account.";
-            String strMessage = "Click the link to verify your account. ";
+            String strMessage = "Click the link to verify your account.";
             try
             {
                 objEmail.SendMail(strTO, strFROM, strSubject, strMessage);
