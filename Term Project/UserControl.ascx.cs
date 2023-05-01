@@ -59,6 +59,7 @@ namespace Term_Project
             lblState.Text = (String)objDB.GetField("HomeState", 0);
             int zip = (int)objDB.GetField("HomeZip", 0);
             lblZip.Text = zip.ToString();
+
             Decimal price = (Decimal)objDB.GetField("AskingPrice", 0);
 
             lblPrice.Text = price.ToString("C2");
