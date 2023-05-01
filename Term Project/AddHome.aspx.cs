@@ -104,6 +104,10 @@ namespace Term_Project
                     //HomeImageUpload.SaveAs(filePath);
                 }
 
+                //also check if image caption has been added and if not add specific null string
+                //newHome.Images.Add("given image");
+                //newHome.ImgCaption.Add("given caption");
+
                 newHome.TotalSQFootage = Int16.Parse(TotalSquareFootageTextBox.Text);
                 newHome.KitchenDimensions = KitchenDimensionsTextBox.Text;
                 newHome.LivingRoomDimension = LivingRoomDimensionsTextBox.Text;
