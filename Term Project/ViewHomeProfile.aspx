@@ -24,7 +24,7 @@
                     <div class="vhp-rea-text">Phone Number: </div>
                 </div>
                 <div class="vhp-images-div">
-                    <img src="https://images.pexels.com/photos/1115804/pexels-photo-1115804.jpeg" alt="Current House Text" />
+                    <asp:Image ImageUrl="https://images.pexels.com/photos/1115804/pexels-photo-1115804.jpeg" runat="server" alt="Current House Text"/>
                 </div>
             </div>
             </div>
