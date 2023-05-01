@@ -8,13 +8,10 @@ using System.Web.Services;
 using System.IO;
 using System.Globalization;
 using System.Web.Script.Serialization;
-<<<<<<< HEAD
 using System.Net.Http;
 using System.Text;
-=======
+
 using System.Net;
-using System.Net.Http;
->>>>>>> idrees
 
 namespace Term_Project
 {
