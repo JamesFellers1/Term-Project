@@ -134,6 +134,7 @@
 
                 <label class="add-home-label">Main Image</label>
                 <asp:FileUpload ID="HomeImageUpload" runat="server" accept="image/*"/>
+                <asp:TextBox ID="ImageCaptionTextBox" runat="server" CssClass="add-home-text-field w-input" MaxLength="256" placeholder="Image Caption" Text=""/>
 
                 <label class="add-home-label" for="Total-Square-Footage">Total Square Footage</label>
                 <asp:TextBox ID="TotalSquareFootageTextBox" runat="server" CssClass="add-home-text-field ah-short-2 w-input" data-name="Total Square Footage" MaxLength="256" Name="Total-Square-Footage" Placeholder="" Required="True" Type="number"></asp:TextBox>
