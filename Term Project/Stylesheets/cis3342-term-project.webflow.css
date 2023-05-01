@@ -308,6 +308,218 @@ body {
     padding: 14px;
 }
 
+
+.shs-container.container {
+    min-height: 100vh;
+    background-color: #212121;
+}
+
+.shs-heading {
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.schedule-home-detail-wrapper {
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+}
+
+.shs-div-block {
+    width: 50%;
+    color: #fff;
+    padding: 20px;
+}
+
+.shs-rea-text, .shs-profile-text {
+    margin-bottom: 10px;
+}
+
+    .shs-profile-text.shs-detail-header {
+        margin-bottom: 3px;
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+.shs-image-holder {
+    min-height: 250px;
+    border: 1px solid #fff;
+}
+
+.shs-label.shs-label-2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.shs-schedule-button {
+    width: 100px;
+    background-color: rgba(56, 152, 236, 0);
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+    .shs-schedule-button:hover {
+        color: #212121;
+        background-color: #fff;
+    }
+
+.shs-disabled-button {
+    width: 100px;
+    cursor: not-allowed;
+    background-color: #454545;
+    border: 2px solid #454545;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+    .shs-disabled-button:hover {
+        color: #fff;
+    }
+
+.vhs-container.container {
+    min-height: 100vh;
+}
+
+.vhs-heading {
+    color: #fafafa;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.vhs-block {
+    width: 700px;
+    min-height: 300px;
+    color: #fff;
+    border: 1px solid #fff;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 18px;
+}
+
+.vhs-no-showings {
+    color: #fff;
+    text-align: center;
+    display: none;
+}
+
+.vhs-block-heading {
+    margin-top: 0;
+}
+
+.ssf-container.container {
+    min-height: 100vh;
+    color: #fff;
+}
+
+.ssf-heading {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.ssf-block {
+    width: 700px;
+    min-height: 300px;
+    color: #fff;
+    border: 1px solid #fff;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
+}
+
+.ssf-block-heading {
+    margin-top: 10px;
+}
+
+.ssf-button {
+    width: 100px;
+    background-color: rgba(56, 152, 236, 0);
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+    .ssf-button:hover {
+        color: #212121;
+        background-color: #fff;
+    }
+
+.ssf-text-area {
+    max-height: 180px;
+    max-width: 100%;
+    min-height: 150px;
+    min-width: 100%;
+    margin-top: 10px;
+}
+
+
+.mo-heading {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.mo-container.container {
+    min-height: 100vh;
+    color: #fff;
+}
+
+.mo-block {
+    width: 700px;
+    min-height: 350px;
+    border: 1px solid #fff;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 22px;
+}
+
+.mo-input-short {
+    width: 175px;
+}
+
+.mo-offer-submit {
+    width: 100px;
+    background-color: rgba(56, 152, 236, 0);
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: block;
+}
+
+    .mo-offer-submit:hover {
+        color: #212121;
+        background-color: #fff;
+    }
+
+.mo-data-head {
+    font-weight: 700;
+}
+
+.mo-view-house-data {
+    width: 150px;
+    text-align: center;
+    background-color: rgba(56, 152, 236, 0);
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: block;
+}
+
+    .mo-view-house-data:hover {
+        color: #212121;
+        background-color: #fff;
+    }
+
 @media screen and (max-width: 991px) {
     .icon {
         font-size: 26px;

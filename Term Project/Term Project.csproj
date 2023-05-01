@@ -168,11 +168,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AddHome.aspx" />
+    <Content Include="AddHomeSuccess.aspx" />
     <Content Include="CreateAccountPage.aspx" />
     <Content Include="HomePage.aspx" />
+    <Content Include="HomeShowingFeedback.aspx" />
     <Content Include="Image\background.jpg" />
     <Content Include="LoginPage.aspx" />
+    <Content Include="MakeOffer.aspx" />
     <Content Include="ManageHomeProfile.aspx" />
+    <Content Include="ScheduleHomeShowing.aspx" />
     <Content Include="SearchHomesPage.aspx" />
     <Content Include="Stylesheets\additional.css" />
     <Content Include="Stylesheets\cis3342-term-project.webflow.css" />
@@ -183,6 +187,8 @@
     <Content Include="UserControl.ascx" />
     <Content Include="VerificationPage.aspx" />
     <Content Include="ViewHomeProfile.aspx" />
+    <Content Include="ViewHomeShowings.aspx" />
+    <Content Include="ViewOffers.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -191,6 +197,13 @@
     </Compile>
     <Compile Include="AddHome.aspx.designer.cs">
       <DependentUpon>AddHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddHomeSuccess.aspx.cs">
+      <DependentUpon>AddHomeSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddHomeSuccess.aspx.designer.cs">
+      <DependentUpon>AddHomeSuccess.aspx</DependentUpon>
     </Compile>
     <Compile Include="Home.cs" />
     <Compile Include="CreateAccountPage.aspx.cs">
@@ -210,12 +223,26 @@
       <DependentUpon>HomePage.aspx</DependentUpon>
     </Compile>
     <Compile Include="HomeShowing.cs" />
+    <Compile Include="HomeShowingFeedback.aspx.cs">
+      <DependentUpon>HomeShowingFeedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeShowingFeedback.aspx.designer.cs">
+      <DependentUpon>HomeShowingFeedback.aspx</DependentUpon>
+    </Compile>
     <Compile Include="LoginPage.aspx.cs">
       <DependentUpon>LoginPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="LoginPage.aspx.designer.cs">
       <DependentUpon>LoginPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MakeOffer.aspx.cs">
+      <DependentUpon>MakeOffer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MakeOffer.aspx.designer.cs">
+      <DependentUpon>MakeOffer.aspx</DependentUpon>
     </Compile>
     <Compile Include="ManageHomeProfile.aspx.cs">
       <DependentUpon>ManageHomeProfile.aspx</DependentUpon>
@@ -231,6 +258,13 @@
     </Compile>
     <Compile Include="REMaster.Master.designer.cs">
       <DependentUpon>REMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleHomeShowing.aspx.cs">
+      <DependentUpon>ScheduleHomeShowing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScheduleHomeShowing.aspx.designer.cs">
+      <DependentUpon>ScheduleHomeShowing.aspx</DependentUpon>
     </Compile>
     <Compile Include="SearchHomesPage.aspx.cs">
       <DependentUpon>SearchHomesPage.aspx</DependentUpon>
@@ -259,6 +293,20 @@
     </Compile>
     <Compile Include="ViewHomeProfile.aspx.designer.cs">
       <DependentUpon>ViewHomeProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewHomeShowings.aspx.cs">
+      <DependentUpon>ViewHomeShowings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewHomeShowings.aspx.designer.cs">
+      <DependentUpon>ViewHomeShowings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewOffers.aspx.cs">
+      <DependentUpon>ViewOffers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewOffers.aspx.designer.cs">
+      <DependentUpon>ViewOffers.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
