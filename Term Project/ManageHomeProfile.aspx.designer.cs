@@ -11,26 +11,8 @@ namespace Term_Project
 {
 
 
-    public partial class AddHome
+    public partial class ManageHomeProfile
     {
-
-        /// <summary>
-        /// HomeOwnerRadioButton control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton HomeOwnerRadioButton;
-
-        /// <summary>
-        /// RealEstateAgentRadioButton control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton RealEstateAgentRadioButton;
 
         /// <summary>
         /// StreetAddressTextBox control.
@@ -105,58 +87,13 @@ namespace Term_Project
         protected global::System.Web.UI.WebControls.TextBox NumberOfBathroomsTextBox;
 
         /// <summary>
-        /// FireplaceCheckBox control.
+        /// AmenitiesTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox FireplaceCheckBox;
-
-        /// <summary>
-        /// BasementCheckBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox BasementCheckBox;
-
-        /// <summary>
-        /// PoolCheckBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox PoolCheckBox;
-
-        /// <summary>
-        /// HottubCheckBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox HottubCheckBox;
-
-        /// <summary>
-        /// GardenCheckBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox GardenCheckBox;
-
-        /// <summary>
-        /// OtherAmenitiesTextBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox OtherAmenitiesTextBox;
+        protected global::System.Web.UI.WebControls.TextBox AmenitiesTextBox;
 
         /// <summary>
         /// HeatingTextBox control.

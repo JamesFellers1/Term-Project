@@ -14,7 +14,7 @@
       <h1 class="create-account-heading">Create An Account</h1>
       <div class="register-wrapper">
         <div class="w-form">
-          <form id="email-form" name="email-form" data-name="Email Form" method="get">
+          <div id="email-form" name="email-form" data-name="Email Form" method="get">
               <label for="name">Name</label>
               <asp:TextBox runat="server" type="text" class="w-input" maxlength="256" name="txtName" data-name="txtName" placeholder="" ID="txtName"></asp:TextBox>
               <label for="email">Email Address</label>
@@ -63,7 +63,7 @@
               <asp:TextBox runat="server" type="text" class="w-input" maxlength="256" name="SQ3" data-name="SQ3" placeholder="" id="txtSQ3" required=""></asp:TextBox>
 
               <asp:Button ID="btnSubmit" runat="server" Text="Submit"  CssClass="log-in-button2 w-button" OnClick="btnSubmit_Click"/>
-          </form>
+          </div>
         </div>
       </div>
     </div>

@@ -23,7 +23,9 @@
                     <div class="vhp-rea-text">Email: </div>
                     <div class="vhp-rea-text">Phone Number: </div>
                 </div>
-                <div class="vhp-images-div"></div>
+                <div class="vhp-images-div">
+                    <img src="https://images.pexels.com/photos/1115804/pexels-photo-1115804.jpeg" alt="Current House Text" />
+                </div>
             </div>
             </div>
         </div>

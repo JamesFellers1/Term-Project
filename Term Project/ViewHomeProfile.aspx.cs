@@ -13,76 +13,100 @@ namespace Term_Project
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Home sampleHome = new Home();
+            Home givenHome = new Home();
             List<object> homeData = new List<object>();
 
-            sampleHome.HomeStreet = "1234 5th Street";
-            homeData.Add(new { Heading = "Street Address", Data = sampleHome.HomeStreet });
+            givenHome.HomeStreet = "1234 5th Street";
+            givenHome.HomeCity = "Philadelphia";
+            givenHome.HomeState = "Pennsylvania";
+            givenHome.HomeZip = 19122;
+            givenHome.PropertyType = "Single-Family";
+            givenHome.HomeSize = 44;
+            givenHome.Bedrooms = 3;
+            givenHome.Bathrooms = 3;
+            givenHome.Amenities = "Fireplace, Garden";
+            givenHome.Heating = "Yes";
+            givenHome.Cooling = "Yes";
+            givenHome.Utilities = "Yes";
+            givenHome.HomeDescription = "A nice home";
+            givenHome.AskingPrice = 300000;
+            givenHome.TotalSQFootage = 2000;
+            givenHome.KitchenDimensions = "A lot";
+            givenHome.LivingRoomDimension = "A lot";
+            givenHome.MainBedDimension = "A lot";
+            givenHome.YearBuilt = 2005;
+            givenHome.Garage = "It exists.";
+            DateTime dateListed = DateTime.ParseExact("12/17/2015", "MM/dd/yyyy", CultureInfo.InvariantCulture);
+            givenHome.DateListed = dateListed;
 
-            sampleHome.HomeCity = "Philadelphia";
-            homeData.Add(new { Heading = "City", Data = sampleHome.HomeCity });
 
-            sampleHome.HomeState = "Pennsylvania";
-            homeData.Add(new { Heading = "State", Data = sampleHome.HomeState });
 
-            sampleHome.HomeZip = 19122;
-            homeData.Add(new { Heading = "Zipcode", Data = sampleHome.HomeZip.ToString() });
 
-            sampleHome.PropertyType = "Single-Family";
-            homeData.Add(new { Heading = "Property Type", Data = sampleHome.PropertyType });
+            homeData.Add(new { Heading = "Street Address", Data = givenHome.HomeStreet });
 
-            sampleHome.HomeSize = 44;
-            homeData.Add(new { Heading = "Home Size", Data = sampleHome.HomeSize.ToString() });
+            
+            homeData.Add(new { Heading = "City", Data = givenHome.HomeCity });
 
-            sampleHome.Bedrooms = 3;
-            homeData.Add(new { Heading = "Number of Bedrooms", Data = sampleHome.Bedrooms.ToString() });
+            
+            homeData.Add(new { Heading = "State", Data = givenHome.HomeState });
 
-            sampleHome.Bathrooms = 3;
-            homeData.Add(new { Heading = "Number of Bathrooms", Data = sampleHome.Bathrooms.ToString() });
+            
+            homeData.Add(new { Heading = "Zipcode", Data = givenHome.HomeZip.ToString() });
 
-            sampleHome.Amenities = "Fireplace, Garden";
-            if (sampleHome.Amenities.Length > 0)
+            
+            homeData.Add(new { Heading = "Property Type", Data = givenHome.PropertyType });
+
+            
+            homeData.Add(new { Heading = "Home Size", Data = givenHome.HomeSize.ToString() });
+
+            
+            homeData.Add(new { Heading = "Number of Bedrooms", Data = givenHome.Bedrooms.ToString() });
+
+            
+            homeData.Add(new { Heading = "Number of Bathrooms", Data = givenHome.Bathrooms.ToString() });
+
+            if (givenHome.Amenities.Length > 0)
             {
-                homeData.Add(new { Heading = "Amenities", Data = sampleHome.Amenities });
+                homeData.Add(new { Heading = "Amenities", Data = givenHome.Amenities });
             }
 
-            sampleHome.Heating = "Yes";
-            homeData.Add(new { Heading = "Heating", Data = sampleHome.Heating });
+            
+            homeData.Add(new { Heading = "Heating", Data = givenHome.Heating });
 
-            sampleHome.Cooling = "Yes";
-            homeData.Add(new { Heading = "Cooling", Data = sampleHome.Cooling });
+            
+            homeData.Add(new { Heading = "Cooling", Data = givenHome.Cooling });
 
-            sampleHome.Utilities = "Yes";
-            homeData.Add(new { Heading = "Utilities", Data = sampleHome.Utilities });
+            
+            homeData.Add(new { Heading = "Utilities", Data = givenHome.Utilities });
 
-            sampleHome.HomeDescription = "A nice home";
-            homeData.Add(new { Heading = "Home Description", Data = sampleHome.HomeDescription });
+            
+            homeData.Add(new { Heading = "Home Description", Data = givenHome.HomeDescription });
 
-            sampleHome.AskingPrice = 300000;
-            homeData.Add(new { Heading = "State", Data = sampleHome.HomeState.ToString() });
+            
+            homeData.Add(new { Heading = "State", Data = givenHome.HomeState.ToString() });
 
-            sampleHome.TotalSQFootage = 2000;
-            homeData.Add(new { Heading = "Total Square Footage", Data = sampleHome.HomeState.ToString() });
+            
+            homeData.Add(new { Heading = "Total Square Footage", Data = givenHome.HomeState.ToString() });
 
-            sampleHome.KitchenDimensions = "A lot";
-            homeData.Add(new { Heading = "Kitchen Dimension", Data = sampleHome.KitchenDimensions });
+            
+            homeData.Add(new { Heading = "Kitchen Dimension", Data = givenHome.KitchenDimensions });
 
-            sampleHome.LivingRoomDimension = "A lot";
-            homeData.Add(new { Heading = "Living Room Dimensions", Data = sampleHome.LivingRoomDimension });
+            
+            homeData.Add(new { Heading = "Living Room Dimensions", Data = givenHome.LivingRoomDimension });
 
-            sampleHome.MainBedDimension = "A lot";
-            homeData.Add(new { Heading = "Main Bedroom Dimensions", Data = sampleHome.MainBedDimension });
+            
+            homeData.Add(new { Heading = "Main Bedroom Dimensions", Data = givenHome.MainBedDimension });
 
-            sampleHome.YearBuilt = 2005;
-            homeData.Add(new { Heading = "Year Built", Data = sampleHome.YearBuilt.ToString() });
+            
+            homeData.Add(new { Heading = "Year Built", Data = givenHome.YearBuilt.ToString() });
 
-            sampleHome.Garage = "It exists.";
-            homeData.Add(new { Heading = "Garage", Data = sampleHome.Garage });
+            
+            homeData.Add(new { Heading = "Garage", Data = givenHome.Garage });
 
-            DateTime dateListed = DateTime.ParseExact("12/17/2015", "MM/dd/yyyy", CultureInfo.InvariantCulture);
+            
+            homeData.Add(new { Heading = "Date Listed", Data = givenHome.DateListed.ToString("MM/dd/yyyy") });
 
-            sampleHome.DateListed = dateListed;
-            homeData.Add(new { Heading = "Date Listed", Data = sampleHome.DateListed.ToString("MM/dd/yyyy") });
+
 
             ViewHomeRepeater.DataSource = homeData;
             ViewHomeRepeater.DataBind();
