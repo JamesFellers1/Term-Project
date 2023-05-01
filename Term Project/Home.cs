@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Web;
 
 namespace Term_Project
@@ -22,8 +23,8 @@ namespace Term_Project
         public string Utilities { get; set; }
         public string HomeDescription { get; set; }
         public int AskingPrice { get; set; }
-        public string Images { get; set; }
-        public string ImgCaption { get; set; }
+        public List<string> Images { get; set; }
+        public List<string> ImgCaption { get; set; }
         public int TotalSQFootage { get; set; }
         public string KitchenDimensions { get; set; }
         public string LivingRoomDimension { get; set; }
@@ -32,7 +33,7 @@ namespace Term_Project
         public string Garage { get; set; }
         public DateTime DateListed { get; set; }
 
-        public Home(int houseid, string homestreet, string homecity, string homestate, int homezip, string propertytype, int homesize, int bedrooms, int bathrooms, string amenities, string heating, string cooling, string utilities, string homedescription, int askingprice, string images, string imgcaption, int totalsqfootage, string kitchendimensions, string livingroomdimension, string mainbeddimension, int yearbuilt, string garage, DateTime datelisted)
+        public Home(int houseid, string homestreet, string homecity, string homestate, int homezip, string propertytype, int homesize, int bedrooms, int bathrooms, string amenities, string heating, string cooling, string utilities, string homedescription, int askingprice, List<string> images, List<string> imgcaption, int totalsqfootage, string kitchendimensions, string livingroomdimension, string mainbeddimension, int yearbuilt, string garage, DateTime datelisted)
         {
             HouseID = houseid;
             HomeStreet = homestreet;
@@ -63,6 +64,13 @@ namespace Term_Project
         public Home()
         {
 
+        }
+
+        public FieldInfo[] GetFields()
+        {
+            Type type = typeof(Home);
+            FieldInfo[] fields = type.GetFields(BindingFlags.Instance | BindingFlags.Public);
+            return fields;
         }
     }
 }

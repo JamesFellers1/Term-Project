@@ -44,7 +44,10 @@ namespace Term_Project
                     return;
                 }
 
-                newHome.HomeAddress = StreetAddressTextBox.Text + "|||" + CityTextBox.Text + "|||" + StateDropDownList.Text + "|||" + ZipcodeTextBox.Text;
+                newHome.HomeStreet = StreetAddressTextBox.Text;
+                newHome.HomeCity = CityTextBox.Text;
+                newHome.HomeState = StateDropDownList.Text;
+                newHome.HomeZip = Int16.Parse(ZipcodeTextBox.Text);
                 newHome.PropertyType = PropertyTypeDropDownList.Text;
 
                 newHome.HomeSize = Int16.Parse(HomeSizeTextBox.Text);
@@ -101,6 +104,10 @@ namespace Term_Project
                     //HomeImageUpload.SaveAs(filePath);
                 }
 
+                //also check if image caption has been added and if not add specific null string
+                //newHome.Images.Add("given image");
+                //newHome.ImgCaption.Add("given caption");
+
                 newHome.TotalSQFootage = Int16.Parse(TotalSquareFootageTextBox.Text);
                 newHome.KitchenDimensions = KitchenDimensionsTextBox.Text;
                 newHome.LivingRoomDimension = LivingRoomDimensionsTextBox.Text;
@@ -122,8 +129,6 @@ namespace Term_Project
                 //store in database (coming soon)
 
                 //redirect to success page
-                
-                
             }
         }
 
@@ -131,6 +136,7 @@ namespace Term_Project
         public static ValidationData AddHomeFormValidation(string data)
         {
             //remember to change to home street, city, state, zip
+            //and to check that zipcode is number
             //and remember ImgCaption
             ValidationData testval = new ValidationData();
             testval.valid = false;

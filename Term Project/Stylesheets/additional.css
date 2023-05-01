@@ -44,3 +44,14 @@
         display: inline-block;
         vertical-align: middle;
     }
+
+.w-layout-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.vhp-grid-div {
+    flex: 1 0 50%; /* each div takes up 50% of the available width */
+    padding: 20px;
+    box-sizing: border-box;
+}
