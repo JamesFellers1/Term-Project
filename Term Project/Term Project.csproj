@@ -81,6 +81,7 @@
     <Content Include="Stylesheets\webflow.css" />
     <Content Include="UserControl.ascx" />
     <Content Include="VerificationPage.aspx" />
+    <Content Include="ViewHomeProfile.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -142,6 +143,13 @@
     </Compile>
     <Compile Include="VerificationPage.aspx.designer.cs">
       <DependentUpon>VerificationPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewHomeProfile.aspx.cs">
+      <DependentUpon>ViewHomeProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewHomeProfile.aspx.designer.cs">
+      <DependentUpon>ViewHomeProfile.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

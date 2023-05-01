@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Web;
 
 namespace Term_Project
@@ -63,6 +64,13 @@ namespace Term_Project
         public Home()
         {
 
+        }
+
+        public FieldInfo[] GetFields()
+        {
+            Type type = typeof(Home);
+            FieldInfo[] fields = type.GetFields(BindingFlags.Instance | BindingFlags.Public);
+            return fields;
         }
     }
 }
