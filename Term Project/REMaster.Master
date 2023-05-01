@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="REMaster.master.cs" Inherits="Term_Project.REMaster" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="REMaster.master.cs" Inherits="Term_Project.REMaster" %>
 
 <!DOCTYPE html>
 

@@ -15,10 +15,11 @@ namespace Term_Project
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            string apiURL = "https://cis-iis2.temple.edu/Spring2023/CIS3342_tul16016/WebAPI/api/home";
             lblType.Text = "You are a " + Session["UserType"].ToString();
             // Create an HTTP Web Request and get the HTTP Web Response from the server.
-
-            WebRequest request = WebRequest.Create("http://localhost:35245/api/Home");
+            //http://localhost:35245/api/Home
+            WebRequest request = WebRequest.Create(apiURL);
             WebResponse response = request.GetResponse();
 
             // Read the data from the Web Response, which requires working with streams.
