@@ -48,6 +48,7 @@ namespace Term_Project
             //Create session objects
             Session["Email"] = txtEmail.Text;
             Session["Name"] = txtName.Text;
+            Session["UserType"] = radType.SelectedValue;
 
             //Store a cookie 
             HttpCookie userInfo = new HttpCookie("userInfo");

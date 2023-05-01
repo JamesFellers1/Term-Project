@@ -13,6 +13,7 @@
         <div class="register-section wf-section">
             <div class="register-container container w-container">
                 <h1 class="create-account-heading">Search Homes</h1>
+                <asp:Label ID="lblType" runat="server" Text=""></asp:Label>
                 <asp:Label ID="lblError" runat="server" Text="" ForeColor="Red"></asp:Label>
                 <div>Search Criteria:
                     <div>

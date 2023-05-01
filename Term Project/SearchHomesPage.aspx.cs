@@ -15,6 +15,7 @@ namespace Term_Project
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            lblType.Text = "You are a " + Session["UserType"].ToString();
             // Create an HTTP Web Request and get the HTTP Web Response from the server.
 
             WebRequest request = WebRequest.Create("http://localhost:35245/api/Home");

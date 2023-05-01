@@ -17,29 +17,6 @@ namespace Term_Project
 
         }
 
-        protected void btnSubmit_Click(object sender, EventArgs e)
-        {
-            /*SqlCommand myCommand = new SqlCommand();
-            myCommand.CommandType = CommandType.StoredProcedure;
-            myCommand.CommandText = "Login";
-
-            myCommand.Parameters.AddWithValue("@username", txtLoginUsername.Text);
-            myCommand.Parameters.AddWithValue("@password", txtLoginPw.Text);
-
-            DBConnect checkLogin = new DBConnect();
-            DataSet loginData;
-            loginData = checkLogin.GetDataSet(myCommand);
-            if (loginData.Tables[0].Rows.Count == 0 || loginData == null)
-            {
-                lblError.Text = "Invalid Login, Please try again.";
-            }
-            else
-            {
-                string str = loginData.Tables[0].Rows[0]["UserId"].ToString();
-                Session["UserID"] = str;
-                Response.Redirect("UserProfilePage.aspx");*/
-            }
-
         protected void btnLogin_Click(object sender, EventArgs e)
         {
             //encrypt pw
@@ -72,6 +49,7 @@ namespace Term_Project
             {
                 string str = loginData.Tables[0].Rows[0]["UserId"].ToString();
                 Session["UserID"] = str;
+                Session["UserType"] = loginData.Tables[0].Rows[0]["UserType"].ToString();
                 Response.Redirect("SearchHomesPage.aspx");
             }
         }
