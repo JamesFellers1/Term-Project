@@ -49,6 +49,7 @@
                     <asp:Button class="log-in-button2" ID="Button4" runat="server" Text="Search by State, Price, Size, Rooms, & Amenities" />
                 </div>
                 <asp:Panel ID="Panel1" runat="server"></asp:Panel>
+                <asp:DataList ID="dlHome" runat="server"></asp:DataList>
             </div>
 
         </div>
