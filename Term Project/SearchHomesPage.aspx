@@ -3,12 +3,13 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" runat="server" ContentPlaceHolderID="ContentPlaceHolder1">
-    <div class="navBar">
-        <div class="topnav">
-            <a href="LoginPage.aspx">Log Out</a>
-
-        </div>
-        <asp:Label ID="lblHomeBuy" class="centered" runat="server" Font-Bold="True" Font-Names="Rockwell Condensed" Font-Size="XX-Large" Style="text-align: center; color: #ffffff; top: 15px; width: 347px;" Text="Home Buy" CssClass="centered" ForeColor="White"></asp:Label>
+    <div class="topnav">
+        <a href="HomePage.aspx" id="HomeNav" runat="server">Home</a>
+        <a href="SearchHomesPage.aspx" id="SearchNav" runat="server">Search</a>
+        <a href="AddHome.aspx" id="AddHomeNav" runat="server">List a Home</a>
+        <a href="MakeOffer.aspx" id="MakeOfferNav" runat="server">Make Offer</a>
+        <a href="ManageHomeProfile.aspx" id="ManageHomeProfileNav" runat="server">Manage Profile</a>
+        <a href="ViewHomeProfile.aspx" id="ViewHomeNav" runat="server">View Home</a>
     </div>
         <div class="register-section wf-section">
             <div class="register-container container w-container">

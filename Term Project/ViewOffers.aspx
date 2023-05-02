@@ -3,7 +3,12 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="topnav">
-        <a href="CreateAccountPage.aspx">Create Account</a>
+        <a href="HomePage.aspx" id="HomeNav" runat="server">Home</a>
+        <a href="SearchHomesPage.aspx" id="SearchNav" runat="server">Search</a>
+        <a href="AddHome.aspx" id="AddHomeNav" runat="server">List a Home</a>
+        <a href="MakeOffer.aspx" id="MakeOfferNav" runat="server">Make Offer</a>
+        <a href="ManageHomeProfile.aspx" id="ManageHomeProfileNav" runat="server">Manage Profile</a>
+        <a href="ViewHomeProfile.aspx" id="ViewHomeNav" runat="server">View Home</a>
     </div>
     <div class="vhs wf-section">
     <div class="vhs-container container w-container">

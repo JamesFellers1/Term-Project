@@ -106,9 +106,9 @@ namespace Term_Project
                     return;
                 } else
                 {
-                    string fileName = Path.GetFileName(HomeImageUpload.FileName);
-                    string filePath = Server.MapPath("~/TermProjectTest/Storage/" + fileName);
-                    HomeImageUpload.SaveAs(filePath);
+                    //string fileName = Path.GetFileName(HomeImageUpload.FileName);
+                    //string filePath = Server.MapPath("~/TermProjectTest/Storage/" + fileName);
+                    //HomeImageUpload.SaveAs(filePath);
                 }
 
                 newHome.TotalSQFootage = Int16.Parse(TotalSquareFootageTextBox.Text);
@@ -178,6 +178,7 @@ namespace Term_Project
 
 
                 //redirect to success page
+                Response.Redirect("AddHomeSuccess.aspx");
             }
         }
 

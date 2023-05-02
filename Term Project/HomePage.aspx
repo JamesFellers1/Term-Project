@@ -1,13 +1,19 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/REMaster.Master" AutoEventWireup="true" CodeBehind="HomePage.aspx.cs" Inherits="Term_Project.HomePage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
+
 <asp:Content ID="Content2" runat="server" contentplaceholderid="ContentPlaceHolder1">
-                <div class="navBar">
-                <asp:Label ID="lblHomeBuy" class="centered" runat="server" Font-Bold="True" Font-Names="Rockwell Condensed" Font-Size="XX-Large" style="text-align: center; color: #ffffff; top: 15px; width: 347px;" Text="Home Buy" CssClass="centered" ForeColor="White"></asp:Label>
-            </div>
-                <div class="background">
+    <div class="topnav">
+        <a href="HomePage.aspx" id="HomeNav" runat="server">Home</a>
+        <a href="SearchHomesPage.aspx" id="SearchNav" runat="server">Search</a>
+        <a href="AddHome.aspx" id="AddHomeNav" runat="server">List a Home</a>
+        <a href="MakeOffer.aspx" id="MakeOfferNav" runat="server">Make Offer</a>
+        <a href="ManageHomeProfile.aspx" id="ManageHomeProfileNav" runat="server">Manage Profile</a>
+        <a href="ViewHomeProfile.aspx" id="ViewHomeNav" runat="server">View Home</a>
+    </div>
+    <div class="background">
 
-                </div>
+    </div>
 
-            </asp:Content>
+</asp:Content>
 
