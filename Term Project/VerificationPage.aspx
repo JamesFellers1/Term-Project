@@ -13,7 +13,7 @@
                                 <asp:Label ID="lblVerification" CssClass="log-in-button2 midcentered" runat="server" Font-Size="Large" Text="Check your email for a link to verify your account."></asp:Label>
                                 <div>
                                 <asp:Button ID="btnResend" runat="server" Text="Resend Email" CssClass="resendbutton" OnClick="btnResend_Click"/>
-                                    <asp:Button ID="btnSkip" runat="server" Text="Skip Verification" OnClick="btnSkip_Click" />
+                                    <asp:Button ID="btnSkip" runat="server" Text="Skip Verification" CssClass="resendbutton" OnClick="btnSkip_Click" />
                                     <asp:Label ID="lblDisplay" runat="server" Width="50%" Text="" Visible="False" CssClass=""></asp:Label>
                                 </div>
                             </div>

@@ -100,19 +100,11 @@ namespace Term_Project
 
                 newHome.AskingPrice = Convert.ToDecimal(Int16.Parse(AskingPriceTextBox.Text));
 
-                if (!HomeImageUpload.HasFile) {
+                if (!HomeImageUpload.HasFile)
+                {
                     ErrorLabel.Text = "Image must be uploaded";
                     ErrorLabel.Style["display"] = "block";
                     return;
-                } else
-                {
-                    //string fileName = Path.GetFileName(HomeImageUpload.FileName);
-                    //string filePath = Server.MapPath("~/TermProjectTest/Storage/" + fileName);
-<<<<<<< HEAD
-                    //HomeImageUpload.SaveAs(filePath);
-=======
-                   // HomeImageUpload.SaveAs(filePath);
->>>>>>> 5852d3249202e0345082cb3314054b68b52ed4ad
                 }
 
                 newHome.TotalSQFootage = Int16.Parse(TotalSquareFootageTextBox.Text);
