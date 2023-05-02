@@ -110,10 +110,15 @@ namespace Term_Project
             
             homeData.Add(new { Heading = "Date Listed", Data = givenHome.DateListed.ToString("MM/dd/yyyy") });
 
-
-
             ViewHomeRepeater.DataSource = homeData;
             ViewHomeRepeater.DataBind();
+
+            int userid = Convert.ToInt32(Session["UserID"]);
+            SOAPApi webService = new SOAPApi();
+            lblSoapDisplay.Text = "Webservice Output: " + webService.GetUser(Convert.ToInt32(Session["UserID"]));
+
+
+
         }
     }
 }

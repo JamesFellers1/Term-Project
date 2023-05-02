@@ -60,5 +60,9 @@ namespace Term_Project
 
         }
 
+        protected void btnSkip_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("SearchHomesPage.aspx");
+        }
     }
 }

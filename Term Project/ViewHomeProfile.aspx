@@ -26,10 +26,10 @@
             </div>
             <div id="w-node-_7255a0db-2e3c-144d-1067-674ebddb8cc1-2631b3a9" class="vhp-grid-div">
                 <div class="vhp-rea-div">
-                    <h3 class="vhp-rea-heading">Real Estate Agent</h3>
-                    <div class="vhp-rea-text rea-name">Name</div>
-                    <div class="vhp-rea-text">Email: </div>
-                    <div class="vhp-rea-text">Phone Number: </div>
+                    <h3 class="vhp-rea-heading">Real Estate Agent / Home Seller</h3>
+                    <asp:Label ID="lblSoapDisplay" runat="server" Text=""></asp:Label>
+                    <div class="vhp-rea-text rea-name"></div>
+                    
                 </div>
                 <div class="vhp-images-div">
                     <asp:Image ImageUrl="https://images.pexels.com/photos/1115804/pexels-photo-1115804.jpeg" runat="server" alt="Current House Text"/>
