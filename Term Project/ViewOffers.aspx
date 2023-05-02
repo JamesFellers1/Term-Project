@@ -2,6 +2,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div class="topnav">
+        <a href="CreateAccountPage.aspx">Create Account</a>
+    </div>
     <div class="vhs wf-section">
     <div class="vhs-container container w-container">
       <h1 class="vhs-heading">View Your Home Showings</h1>

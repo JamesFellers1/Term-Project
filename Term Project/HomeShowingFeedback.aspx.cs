@@ -11,7 +11,10 @@ namespace Term_Project
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["UserType"] == null)
+            {
+                Response.Redirect("LoginPage.aspx");
+            }
         }
     }
 }

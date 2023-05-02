@@ -5,7 +5,6 @@
     <div class="navBar">
         <div class="topnav">
             <a href="CreateAccountPage.aspx">Create Account</a>
-
         </div>
         <asp:Label ID="lblHomeBuy" class="centered" runat="server" Font-Bold="True" Font-Names="Rockwell Condensed" Font-Size="XX-Large" style="text-align: center; color: #ffffff; top: 15px; width: 347px;" Text="Home Buy" CssClass="centered" ForeColor="White"></asp:Label>
 

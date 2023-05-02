@@ -11,6 +11,10 @@ namespace Term_Project
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["UserType"] == null)
+            {
+                Response.Redirect("LoginPage.aspx");
+            }
             List<HomeShowing> homeShowingObjects = new List<HomeShowing>();
             List<object> homeshowings = new List<object>();
             //add here
