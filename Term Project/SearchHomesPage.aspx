@@ -33,7 +33,7 @@
                     </div>
                     <div>
                         <asp:Label ID="lblAmenities" runat="server" Text="Amenities:"></asp:Label>
-                        <asp:CheckBoxList ID="chkListAmenities" runat="server" RepeatDirection="Horizontal" Width="50%" OnSelectedIndexChanged="chkListAmenities_SelectedIndexChanged">
+                        <asp:CheckBoxList ID="chkListAmenities" runat="server" RepeatDirection="Horizontal" Width="50%" >
                             <asp:ListItem>Fireplace</asp:ListItem>
                             <asp:ListItem>Basement</asp:ListItem>
                             <asp:ListItem>Pool</asp:ListItem>

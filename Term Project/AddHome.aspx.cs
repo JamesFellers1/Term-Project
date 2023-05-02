@@ -102,9 +102,9 @@ namespace Term_Project
                     return;
                 } else
                 {
-                    string fileName = Path.GetFileName(HomeImageUpload.FileName);
-                    string filePath = Server.MapPath("~/TermProjectTest/Storage/" + fileName);
-                    HomeImageUpload.SaveAs(filePath);
+                    //string fileName = Path.GetFileName(HomeImageUpload.FileName);
+                    //string filePath = Server.MapPath("~/TermProjectTest/Storage/" + fileName);
+                   // HomeImageUpload.SaveAs(filePath);
                 }
 
                 newHome.TotalSQFootage = Int16.Parse(TotalSquareFootageTextBox.Text);
@@ -125,7 +125,7 @@ namespace Term_Project
                 }
                 newHome.DateListed = datelisted;
 
-                string apiURL = "https://cis-iis2.temple.edu/Spring2023/CIS3342_tul16016/WebAPI/api/home";
+                string apiURL = "http://localhost:35245/api/Home";
                 string postData = @"{
                     ""HomeStreet"": ""123 Main St"",
                     ""HomeCity"": ""Philadelphia"",
